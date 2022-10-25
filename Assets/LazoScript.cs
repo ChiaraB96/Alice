@@ -33,7 +33,10 @@ public class LazoScript : MonoBehaviour
             disparado = true;
 
         if (disparado) {
-            LineRenderer soga = GetComponent<LineRenderer>();
+            LineRenderer soga = lazo.GetComponent<LineRenderer>();
+            soga.SetVertexCount(2);
+            soga.SetPosition(0, holder.transform.position);
+            soga.SetPosition(1, lazo.transform.position);
         }
         if (disparado == true && enlazado == false)
         {
@@ -51,12 +54,12 @@ public class LazoScript : MonoBehaviour
 
             this.GetComponent<Rigidbody>().useGravity = false;
 
-            if(distanceToLazo < 2){
+            if(distanceToLazo < 1){
                 if(pisando == false){
                     this.transform.Translate(Vector3.forward * Time.deltaTime * 13f);
-                    this.transform.Translate(Vector3.up * Time.deltaTime * 17f);
+                    this.transform.Translate(Vector3.up * Time.deltaTime * 18f);
                 }
-                StartCoroutine("Trepar");
+                StartCoroutine("Subir");
             }
         } else {
             lazo.transform.parent = holder.transform;
@@ -65,7 +68,7 @@ public class LazoScript : MonoBehaviour
 
     }
 
-    IEnumerator Trepar(){
+    IEnumerator Subir(){
         yield return new WaitForSeconds(0.1f);
         DevolverLazo();
     }
@@ -76,6 +79,9 @@ public class LazoScript : MonoBehaviour
         lazo.transform.position = holder.transform.position;
         disparado = false;
         enlazado = false;
+
+         LineRenderer soga = lazo.GetComponent<LineRenderer>();
+            soga.SetVertexCount(0);
 
     }
 
