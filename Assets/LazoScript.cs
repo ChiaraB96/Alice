@@ -31,6 +31,10 @@ public class LazoScript : MonoBehaviour
         //disparar lazo
         if(Input.GetMouseButtonDown(0) && disparado == false)
             disparado = true;
+
+        if (disparado) {
+            LineRenderer soga = GetComponent<LineRenderer>();
+        }
         if (disparado == true && enlazado == false)
         {
             lazo.transform.Translate(Vector3.forward * Time.deltaTime * lazoTravelSpeed);
