@@ -48,6 +48,7 @@ public class LazoScript : MonoBehaviour
         }
 
         if(enlazado == true && disparado == true){
+            pisando = false;
             lazo.transform.parent = objetoEnlazable.transform;
             transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, Time.deltaTime *jugadorTravelSpeed);
             float distanceToLazo = Vector3.Distance(transform.position, lazo.transform.position);
