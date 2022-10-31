@@ -50,15 +50,15 @@ public class LazoScript : MonoBehaviour
         if(enlazado == true && disparado == true){
             pisando = false;
             lazo.transform.parent = objetoEnlazable.transform;
-            transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, Time.deltaTime *jugadorTravelSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, jugadorTravelSpeed);
             float distanceToLazo = Vector3.Distance(transform.position, lazo.transform.position);
 
             this.GetComponent<Rigidbody>().useGravity = false;
 
             if(distanceToLazo < 1){
                 if(pisando == false){
-                    this.transform.Translate(Vector3.forward * Time.deltaTime * 20f);
-                    this.transform.Translate(Vector3.up * Time.deltaTime * 25f);
+                    this.transform.Translate(Vector3.forward * Time.deltaTime * 10f);
+                    this.transform.Translate(Vector3.up * Time.deltaTime * 15f);
                 }
                 StartCoroutine("Subir");
             }
