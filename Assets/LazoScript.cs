@@ -57,7 +57,7 @@ public class LazoScript : MonoBehaviour
 
             if(distanceToLazo < 1){
                 if(pisando == false){
-                    this.transform.Translate(Vector3.forward * Time.deltaTime * 20f);
+                    this.transform.Translate(Vector3.forward * Time.deltaTime * 15f);
                     this.transform.Translate(Vector3.up * Time.deltaTime * 25f);
                 }
                 StartCoroutine("Subir");
