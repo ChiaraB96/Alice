@@ -19,11 +19,7 @@ public class LazoScript : MonoBehaviour
     
     private bool pisando;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -50,14 +46,14 @@ public class LazoScript : MonoBehaviour
         if(enlazado == true && disparado == true){
             pisando = false;
             lazo.transform.parent = objetoEnlazable.transform;
-            transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, jugadorTravelSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, jugadorTravelSpeed*Time.deltaTime);
             float distanceToLazo = Vector3.Distance(transform.position, lazo.transform.position);
 
             this.GetComponent<Rigidbody>().useGravity = false;
 
             if(distanceToLazo < 1){
                 if(pisando == false){
-                    this.transform.Translate(Vector3.forward * Time.deltaTime * 10f);
+                    this.transform.Translate(Vector3.forward * Time.deltaTime * 25.0f);
                     this.transform.Translate(Vector3.up * Time.deltaTime * 15f);
                 }
                 StartCoroutine("Subir");
@@ -70,7 +66,7 @@ public class LazoScript : MonoBehaviour
     }
 
     IEnumerator Subir(){
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(1f);
         DevolverLazo();
     }
 
