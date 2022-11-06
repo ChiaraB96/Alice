@@ -1262,10 +1262,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 7
 =======
   m_RootOrder: 29
 >>>>>>> parent of 37613ed (Acomodo2)
+=======
+  m_RootOrder: 6
+>>>>>>> parent of a36905e (Animations)
 =======
   m_RootOrder: 6
 >>>>>>> parent of a36905e (Animations)
@@ -1543,7 +1547,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 8
+=======
+  m_RootOrder: 7
+>>>>>>> parent of a36905e (Animations)
 =======
   m_RootOrder: 7
 >>>>>>> parent of a36905e (Animations)
@@ -1602,10 +1610,14 @@ Transform:
   - {fileID: 287934626}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 10
 =======
   m_RootOrder: 32
 >>>>>>> parent of 37613ed (Acomodo2)
+=======
+  m_RootOrder: 9
+>>>>>>> parent of a36905e (Animations)
 =======
   m_RootOrder: 9
 >>>>>>> parent of a36905e (Animations)
@@ -2183,10 +2195,14 @@ RectTransform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 9
 =======
   m_RootOrder: 33
 >>>>>>> parent of 37613ed (Acomodo2)
+=======
+  m_RootOrder: 8
+>>>>>>> parent of a36905e (Animations)
 =======
   m_RootOrder: 8
 >>>>>>> parent of a36905e (Animations)
