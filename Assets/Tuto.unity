@@ -1425,7 +1425,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682195673}
-  m_LocalRotation: {x: -0.12062689, y: 0.016204197, z: 0.0019693063, w: 0.9925637}
+  m_LocalRotation: {x: -0.12064126, y: 0.0053165792, z: 0.0006461274, w: 0.99268174}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1711,30 +1711,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ffde5a2427acdba428f4f2103d25ab6b, type: 3}
   m_PrefabInstance: {fileID: 1816062498}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &844655450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844655449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880b1b5ef7a49b948ad6411ffa58016f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pm: {fileID: 0}
-  cam: {fileID: 0}
-  gunTip: {fileID: 0}
-  whatIsGrappleable:
-    m_Bits: 0
-  lr: {fileID: 0}
-  maxGrappleDistance: 0
-  grappleDelayTime: 0
-  overshootYAxis: 0
-  grapplePoint: {x: 0, y: 0, z: 0}
-  grapplingCd: 0
-  grapplingCdTimer: 0
 --- !u!143 &844655451
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2649,7 +2625,7 @@ GameObject:
   - component: {fileID: 1180100224}
   - component: {fileID: 1180100228}
   - component: {fileID: 1180100229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Enlazable
   m_Icon: {fileID: 0}
@@ -3083,7 +3059,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276344792}
-  m_LocalRotation: {x: 0.26673466, y: -0.021192105, z: 0.0058666905, w: 0.96351916}
+  m_LocalRotation: {x: 0.26673466, y: -0.021192173, z: 0.005866709, w: 0.96351916}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4966,7 +4942,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063572152}
-  m_LocalRotation: {x: -0.10731111, y: 0.013181981, z: 0.0014229156, w: 0.99413705}
+  m_LocalRotation: {x: -0.10732006, y: 0.0031496885, z: 0.00033999013, w: 0.99421954}
   m_LocalPosition: {x: -2.3444996, y: 2.773701, z: -16.365177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
