@@ -51,7 +51,7 @@ public class LazoScript : MonoBehaviour
 
             this.GetComponent<Rigidbody>().useGravity = false;
 
-            if(distanceToLazo < 1){
+            if(distanceToLazo < 2){
                 if(pisando == false){
                     this.transform.Translate(Vector3.forward * Time.deltaTime * 25.0f);
                     this.transform.Translate(Vector3.up * Time.deltaTime * 15f);
