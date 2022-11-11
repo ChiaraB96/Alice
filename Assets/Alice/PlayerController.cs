@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerInput;
 
     public CharacterController player;
-    public bool monedaJugador = false;
 
     public float playerSpeed;
     private Vector3 movePlayer;
@@ -26,18 +25,14 @@ public class PlayerController : MonoBehaviour
     public float SlideVelocity;
     public float slopeForceDown;
 
-    private List<GameObject> inventory;
-
     public Animator playerAnimatorController;
 
     // Start is called before the first frame update
     void Start()
     {
-        inventory = new List<GameObject>();
         player = GetComponent<CharacterController>();
         playerAnimatorController = GetComponent<Animator>();
     }
-    public void AddToInventory
 
     // Update is called once per frame
     void Update()

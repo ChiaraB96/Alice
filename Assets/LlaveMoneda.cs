@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LlaveMoneda : MonoBehaviour
 {
-   public bool monedaJugador = false;
    PlayerController jugador;
 
    
