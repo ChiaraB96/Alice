@@ -16,10 +16,8 @@ public class LazoScript : MonoBehaviour
     
     public float maxDist = 20.0f;
     private float distActual;
-    
-    private bool pisando;
 
-   
+
 
     // Update is called once per frame
     void Update()
@@ -44,30 +42,20 @@ public class LazoScript : MonoBehaviour
         }
 
         if(enlazado == true && disparado == true){
-            pisando = false;
             lazo.transform.parent = objetoEnlazable.transform;
             transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, jugadorTravelSpeed*Time.deltaTime);
             float distanceToLazo = Vector3.Distance(transform.position, lazo.transform.position);
 
             this.GetComponent<Rigidbody>().useGravity = false;
 
-            if(distanceToLazo < 2){
-                if(pisando == false){
-                    this.transform.Translate(Vector3.forward * Time.deltaTime * 13f);
-                    this.transform.Translate(Vector3.up * Time.deltaTime * 18f);
-                }
-                StartCoroutine("Subir");
+            if(distanceToLazo < 3){
+                DevolverLazo();
             }
         } else {
             lazo.transform.parent = holder.transform;
             this.GetComponent<Rigidbody>().useGravity = true;
         }
 
-    }
-
-    IEnumerator Subir(){
-        yield return new WaitForSeconds(1f);
-        DevolverLazo();
     }
 
     void DevolverLazo()
@@ -82,15 +70,5 @@ public class LazoScript : MonoBehaviour
 
     }
 
-    void CheckearPiso(){
-        RaycastHit hit;
-        float distance = 1f;
-        Vector3 dir = new Vector3(0, -1);
-
-        if(Physics.Raycast(transform.position, dir, out hit, distance)){
-            pisando = true;
-        } else {
-            pisando = false;
-        }
-    }
+   
 }
