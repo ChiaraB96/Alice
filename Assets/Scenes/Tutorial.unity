@@ -613,9 +613,9 @@ GameObject:
   - component: {fileID: 1315186878}
   - component: {fileID: 1315186877}
   - component: {fileID: 1315186876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
-  m_TagString: WallRunLayer
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 2016108862}
   - component: {fileID: 2016108861}
   - component: {fileID: 2016108860}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (3)
   m_TagString: WallRunLayer
   m_Icon: {fileID: 0}
