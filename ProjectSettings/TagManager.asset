@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lazo
   - Enlazable
+  - WallRunLayer
   layers:
   - Default
   - TransparentFX
@@ -17,9 +18,9 @@ TagManager:
   - 
   - Grapple
   - Grounded
-  - layerMask
-  - 
-  - 
+  - WallRunLayer
+  - Player
+  - wallrun
   - 
   - 
   - 
