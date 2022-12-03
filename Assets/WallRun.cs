@@ -53,12 +53,9 @@ public class WallRun : MonoBehaviour
            
         }
         
-        else if (!WallOnLeft && !WallOnRight )
-        {
-            StopWR();
-        }
 
-        if (Input.GetKeyDown("d") && WallOnLeft && IsWallRunning)
+
+        if (Input.GetKey("d") && WallOnLeft && IsWallRunning)
         {
              StopWR();
             rb.AddForce(orientation.right * WallSwitchStrngth * Time.deltaTime);
@@ -66,11 +63,16 @@ public class WallRun : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown("a") && WallOnRight && IsWallRunning)
+        if (Input.GetKey("a") && WallOnRight && IsWallRunning)
         {
              StopWR();
             rb.AddForce(-orientation.right * WallSwitchStrngth * Time.deltaTime);
             rb.AddForce(orientation.up * WallJumpForce * Time.deltaTime);
+        }
+
+                else if (!WallOnLeft && !WallOnRight )
+        {
+            StopWR();
         }
     }
 
