@@ -58,14 +58,17 @@ public class WallRun : MonoBehaviour
             StopWR();
         }
 
-        if (Input.GetKey("d") && WallOnLeft && IsWallRunning)
+        if (Input.GetKeyDown("d") && WallOnLeft && IsWallRunning)
         {
+             StopWR();
             rb.AddForce(orientation.right * WallSwitchStrngth * Time.deltaTime);
             rb.AddForce(orientation.up * WallJumpForce * Time.deltaTime);
+            
         }
 
-        if (Input.GetKey("a") && WallOnRight && IsWallRunning)
+        if (Input.GetKeyDown("a") && WallOnRight && IsWallRunning)
         {
+             StopWR();
             rb.AddForce(-orientation.right * WallSwitchStrngth * Time.deltaTime);
             rb.AddForce(orientation.up * WallJumpForce * Time.deltaTime);
         }

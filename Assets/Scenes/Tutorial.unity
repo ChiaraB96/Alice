@@ -753,9 +753,9 @@ MonoBehaviour:
   WallSwitchStrngth: 2500
   WallJumpForce: 100
   cam: {fileID: 653747265}
-  RotationCam1: 180
-  RotationCam2: 180
-  RotationCam3: 180
+  RotationCam1: 0
+  RotationCam2: 0
+  RotationCam3: 0
 --- !u!1 &1565012683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5167233117827359659, guid: fe4520faea9d3844fad09615c4ed2f13, type: 3}
@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 2016108860}
   m_Layer: 10
   m_Name: Cube (3)
-  m_TagString: WallRunLayer
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1027,7 +1027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016108859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: 42.9, z: 72.5}
+  m_LocalPosition: {x: -2.1, y: 42.9, z: 72.5}
   m_LocalScale: {x: 0.191418, y: 14.847338, z: 89.00064}
   m_Children: []
   m_Father: {fileID: 0}
