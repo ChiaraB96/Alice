@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 32085659}
   - component: {fileID: 32085658}
   - component: {fileID: 32085657}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,7 +4848,7 @@ GameObject:
   - component: {fileID: 408708962}
   - component: {fileID: 408708961}
   - component: {fileID: 408708960}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5513,8 +5513,8 @@ GameObject:
   - component: {fileID: 487362852}
   - component: {fileID: 487362851}
   - component: {fileID: 487362850}
-  m_Layer: 12
-  m_Name: Deslizarse (2)
+  m_Layer: 10
+  m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7477,7 +7477,7 @@ GameObject:
   - component: {fileID: 623935855}
   - component: {fileID: 623935854}
   - component: {fileID: 623935853}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12068,6 +12068,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: RotationCam1
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: RotationCam2
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: RotationCam3
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: movementSettings.BackwardSpeed
       value: 3.5
@@ -12431,7 +12443,7 @@ GameObject:
   - component: {fileID: 1061984917}
   - component: {fileID: 1061984916}
   - component: {fileID: 1061984915}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17139,7 +17151,7 @@ GameObject:
   - component: {fileID: 1420071905}
   - component: {fileID: 1420071904}
   - component: {fileID: 1420071903}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17804,8 +17816,8 @@ GameObject:
   - component: {fileID: 1468166419}
   - component: {fileID: 1468166418}
   - component: {fileID: 1468166417}
-  m_Layer: 12
-  m_Name: Deslizarse (1)
+  m_Layer: 10
+  m_Name: 'Deslizarse '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24515,7 +24527,7 @@ GameObject:
   - component: {fileID: 1927608223}
   - component: {fileID: 1927608222}
   - component: {fileID: 1927608221}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26976,7 +26988,7 @@ GameObject:
   - component: {fileID: 2109175967}
   - component: {fileID: 2109175966}
   - component: {fileID: 2109175965}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Deslizarse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
