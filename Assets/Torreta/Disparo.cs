@@ -7,8 +7,8 @@ public class Disparo : MonoBehaviour
     public GameObject bala;
     public float tiempo = 2f;
     private int contador;
-    public int maxCont = 20;
-    
+    public int maxCont = 2000;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class Disparo : MonoBehaviour
             Instantiate(bala, transform.position, transform.rotation);
             yield return new WaitForSeconds (tiempo);
         }
-        Debug.Log("Fin corutina");
+        Debug.Log("Fin corrutina");
     }
 }
 
