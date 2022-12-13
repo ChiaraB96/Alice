@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1596cb5c9c142e1478648929e3cb6ef6, type: 3}
-  m_Name: Inventory Item Yellow
+  m_Name: Inventory Item Blue
   m_EditorClassIdentifier: 
-  id: InventoryItemParticleYellow
-  itemName: ParticleYellow
-  itemIcon: {fileID: 21300000, guid: 33fb62694c96cb348b17bebf6a152d6b, type: 3}
-  itemPrefab: {fileID: 100006, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+  id: InventoryItemParticleBlue
+  displayName: ParticleBlue
+  icon: {fileID: 21300000, guid: 67ecf2bd675ecda428a0912e4eb80661, type: 3}
+  prefab: {fileID: 100004, guid: 034e51e6d8986d04795f48b487231687, type: 3}
