@@ -1,10 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[Serializable]
-
-public class InventoryItem
+﻿public class InventoryItem
 
 {
     public InventoryItemData data { get; private set; }
@@ -13,11 +7,11 @@ public class InventoryItem
     public InventoryItem(InventoryItemData source)
     {
         data = source;
-        AddToStack;
+        AddToStack();
     }
     public void AddToStack()
     {
-        atackSize++;
+        stackSize++;
     }
     public void RemoveFromStack()
     {
