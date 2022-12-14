@@ -15,4 +15,4 @@ MonoBehaviour:
   id: InventoryItemParticleYellow
   displayName: ParticleYellow
   icon: {fileID: 21300000, guid: 33fb62694c96cb348b17bebf6a152d6b, type: 3}
-  prefab: {fileID: 100006, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+  prefab: {fileID: 0}
