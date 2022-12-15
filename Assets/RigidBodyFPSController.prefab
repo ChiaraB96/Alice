@@ -367,15 +367,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8576347514245992232}
-  orientation: {fileID: 8576347514067185049}
+  orientacion: {fileID: 8576347514067185049}
   WallRunLayer:
     serializedVersion: 2
     m_Bits: 7168
-  WallRunSpeed: 1250
-  WallStickStrngth: 500
-  Reach: 2
-  WallSwitchStrngth: 2500
-  WallJumpForce: 100
+  wallRunVelocidad: 1250
+  fuerzaAgarre: 500
+  alcance: 2
+  fuerzaCambiarMuro: 2500
+  fuerzaSaltoMuro: 100
   cam: {fileID: 8576347514240970344}
   RotationCam1: 180
   RotationCam2: 180

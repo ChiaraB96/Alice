@@ -6,20 +6,20 @@ using UnityEngine;
 
 public class WallRun : MonoBehaviour
 {
-    bool IsWallRunning;
-    bool WallOnLeft;
-    bool WallOnRight;
+    bool estaWR;
+    bool muroIzquierda;
+    bool muroDerecha;
 
     public Rigidbody rb;
 
-    public Transform orientation;
+    public Transform orientacion;
     public LayerMask WallRunLayer; 
 
-    public float WallRunSpeed;
-    public float WallStickStrngth;
-    public float Reach;
-    public float WallSwitchStrngth;
-    public float WallJumpForce;
+    public float wallRunVelocidad = 1250f;
+    public float fuerzaAgarre = 500f;
+    public float alcance = 2f;
+    public float fuerzaCambiarMuro = 2500f;
+    public float fuerzaSaltoMuro = 100f;
 
     public Camera cam;
     public float RotationCam1;
@@ -28,72 +28,72 @@ public class WallRun : MonoBehaviour
 
     void Update()
     {
-        WallOnRight = Physics.Raycast(transform.position, orientation.right, Reach,WallRunLayer);
-        WallOnLeft = Physics.Raycast(transform.position, -orientation.right, Reach,WallRunLayer);
-        CheckForWR();
+        muroDerecha = Physics.Raycast(transform.position, orientacion.right, alcance,WallRunLayer);
+        muroIzquierda = Physics.Raycast(transform.position, -orientacion.right, alcance,WallRunLayer);
+        CheckearSiWR();
 
-        if(IsWallRunning != true)
+        if(estaWR != true)
         {
-            StopWR();
+            PararWR();
         }
 
     }
 
-    private void CheckForWR()
+    private void CheckearSiWR()
     {
-        if(Input.GetKey("a") && WallOnLeft)
+        if(Input.GetKey("a") && muroIzquierda)
         {
-            SartWR();
+            EmpezarWR();
           
         }
 
-        if (Input.GetKey("d") && WallOnRight)
+        if (Input.GetKey("d") && muroDerecha)
         {     
-            SartWR();
+            EmpezarWR();
            
         }
         
 
 
-        if (Input.GetKey("d") && WallOnLeft && IsWallRunning)
+        if (Input.GetKey("d") && muroIzquierda && estaWR)
         {
-             StopWR();
-            rb.AddForce(orientation.right * WallSwitchStrngth * Time.deltaTime);
-            rb.AddForce(orientation.up * WallJumpForce * Time.deltaTime);
+             PararWR();
+            rb.AddForce(orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
+            rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
             
         }
 
-        if (Input.GetKey("a") && WallOnRight && IsWallRunning)
+        if (Input.GetKey("a") && muroDerecha && estaWR)
         {
-             StopWR();
-            rb.AddForce(-orientation.right * WallSwitchStrngth * Time.deltaTime);
-            rb.AddForce(orientation.up * WallJumpForce * Time.deltaTime);
+             PararWR();
+            rb.AddForce(-orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
+            rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
         }
 
-                else if (!WallOnLeft && !WallOnRight )
+                else if (!muroIzquierda && !muroDerecha )
         {
-            StopWR();
+            PararWR();
         }
     }
 
-    private void SartWR()
+    private void EmpezarWR()
     {
         rb.useGravity = false;
-        IsWallRunning = true;
+        estaWR = true;
 
         
-       rb.AddForce(orientation.forward * WallRunSpeed * Time.deltaTime);
+       rb.AddForce(orientacion.forward * wallRunVelocidad * Time.deltaTime);
        
-       if (WallOnRight){
-            rb.AddForce(orientation.right * WallStickStrngth * Time.deltaTime);
+       if (muroDerecha){
+            rb.AddForce(orientacion.right * fuerzaAgarre * Time.deltaTime);
 
             cam.transform.Rotate(Vector3.down, RotationCam1 * Time.deltaTime);
             cam.transform.Rotate(Vector3.forward, RotationCam2 * Time.deltaTime);
             cam.transform.Rotate(Vector3.left, RotationCam3 * Time.deltaTime);
         }
 
-        if (WallOnLeft){
-            rb.AddForce(-orientation.right * WallStickStrngth * Time.deltaTime);
+        if (muroIzquierda){
+            rb.AddForce(-orientacion.right * fuerzaAgarre * Time.deltaTime);
 
             cam.transform.Rotate(Vector3.up, RotationCam1 * Time.deltaTime);
             cam.transform.Rotate(Vector3.forward, RotationCam2 * Time.deltaTime);
@@ -101,10 +101,10 @@ public class WallRun : MonoBehaviour
         }
              
     }
-    private void StopWR()
+    private void PararWR()
     {
         rb.useGravity = true;
-        IsWallRunning = false;
+        estaWR = false;
         
     }
 
