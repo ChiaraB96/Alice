@@ -7,7 +7,7 @@ public class InventorySystemm : MonoBehaviour
     public static InventorySystemm Instance;
 
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
-    public List<InventoryItem> inventory; //{get; private set; }
+    public List<InventoryItem> inventory { get; private set; }
 
     private void Awake()
     {
@@ -16,14 +16,14 @@ public class InventorySystemm : MonoBehaviour
 
         Instance = this;
     }
-    public InventoryItem Get(InventoryItemData referenceData)
+    /*public InventoryItem Get(InventoryItemData referenceData)
     {
         if(m_itemDictionary.TryGetValue(referenceData, out InventoryItem value))
         {
             return value;
         }
         return null;
-    }
+    }*/
 
     public void Add(InventoryItemData referenceData)
         {
