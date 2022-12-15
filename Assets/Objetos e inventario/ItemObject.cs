@@ -2,11 +2,11 @@
 
 public class ItemObject : MonoBehaviour
 {
-    public InventoryItemData referenceItem;
+    public InventoryItemData itemData;
 
-    public void OnHandlePickUpItem()
+    public void OnHandlePickUp()
     {
-        InventorySystemm.Instance.Add(referenceItem);
+        InventorySystem.Instance.Add(itemData);
         Destroy(gameObject);
     }
 
@@ -14,7 +14,7 @@ public class ItemObject : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            OnHandlePickUpItem();
+            OnHandlePickUp();
         }
     }
 }
