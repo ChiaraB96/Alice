@@ -31,12 +31,7 @@ public class Movimiento : MonoBehaviour
             if(temp>4f)
             {Instantiate(bala, spawnBala.position, spawnBala.rotation);
             temp = 0.0f;
-
             }
-
          }
     }
-
-
-
 }
