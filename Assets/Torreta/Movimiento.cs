@@ -10,17 +10,6 @@ public class Movimiento : MonoBehaviour
     public Transform spawnBala;
     private float temp = 0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerStay (Collider other)
     {
         temp += Time.deltaTime;
