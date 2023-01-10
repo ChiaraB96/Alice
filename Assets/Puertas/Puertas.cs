@@ -8,7 +8,7 @@ public class Puertas : MonoBehaviour
     public GameObject door; // Asigna la puerta en el Inspector de Unity
     public GameObject key; // Asigna la llave en el Inspector de Unity
 
-    private bool hasKey; // Almacena si el jugador tiene la llave o no
+    private bool hasKey = false; // Almacena si el jugador tiene la llave o no
 
     void OnTriggerEnter(Collider other)
     {
@@ -17,7 +17,7 @@ public class Puertas : MonoBehaviour
 
     void CheckKey()
     {
-        if (hasKey)
+        if (hasKey = true)
         {
             OpenDoor(); // Abre la puerta
         }

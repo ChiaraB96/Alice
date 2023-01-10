@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class ItemObject : MonoBehaviour
 {
     public InventoryItemData itemData;
+    public UnityEvent OnPickUp; 
 
-    public void OnHandlePickUp()
+    public void HandlePickUp()
     {
         InventorySystem.Instance.Add(itemData);
+        OnPickUp.Invoke();
         Destroy(gameObject);
     }
 
@@ -14,7 +17,7 @@ public class ItemObject : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            OnHandlePickUp();
+            HandlePickUp();
         }
     }
 }
