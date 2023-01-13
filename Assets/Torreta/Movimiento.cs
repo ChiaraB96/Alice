@@ -1,4 +1,39 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+
+public class Movimiento : MonoBehaviour
+{
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    public float fireRate = 1f;
+    public float detectionRadius = 10f;
+
+    private float fireTimer;
+
+    void Update()
+    {
+        // Buscar jugadores en el radio de detección
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRadius);
+        foreach (Collider player in hitColliders)
+        {
+            if (player.CompareTag("Player"))
+            {
+                // Apuntar hacia el jugador
+                transform.LookAt(player.transform);
+
+                // Disparar
+                fireTimer += Time.deltaTime;
+                if (fireTimer >= fireRate)
+                {
+                    fireTimer = 0;
+                    GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+                    bullet.GetComponent<Rigidbody>().AddForce(firePoint.forward * 1400);
+                }
+            }
+        }
+    }
+}
+/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,3 +59,4 @@ public class Movimiento : MonoBehaviour
          }
     }
 }
+*/
