@@ -1,23 +1,15 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Puertas : MonoBehaviour
 {
     public GameObject door; // Asigna la puerta en el Inspector de Unity
-    public GameObject key; // Asigna la llave en el Inspector de Unity
-
-    private bool hasKey = false; // Almacena si el jugador tiene la llave o no
-
-    void OnTriggerEnter(Collider other)
-    {
-        CheckKey(); // Verifica si el jugador tiene la llave
-    }
+    public bool hasKey = false; // Almacena si el jugador tiene la llave o no
 
     void CheckKey()
     {
-        if (hasKey = true)
+        if (hasKey == true)
         {
             OpenDoor(); // Abre la puerta
         }
@@ -29,8 +21,6 @@ public class Puertas : MonoBehaviour
 
     void OpenDoor()
     {
-        Destroy(door);
-        Destroy(key);
+        Destroy(door); // Destruye la puerta
     }
 }
-
