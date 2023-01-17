@@ -5,13 +5,12 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour {
     public Transform checkpoint;
     GameObject player;
-	// Use this for initialization
-	void Start () {
 
+	void Start ()
+    {
         player = GameObject.FindWithTag("Player");
 	}
 	
-	// Update is called once per frame
 	void OnTriggerEnter (Collider plyr) {
 		if(plyr.gameObject.tag == "Player")
         {

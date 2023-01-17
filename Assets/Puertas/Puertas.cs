@@ -29,9 +29,8 @@ public class Puertas : MonoBehaviour
 
     void OpenDoor()
     {
-        //door.GetComponent<BoxCollider>().enabled = false; // Desactiva el collider de la puerta
         Destroy(door);
-        //door.transform.Rotate(0, 90, 0); // Rota la puerta 90 grados en el eje Y
+        Destroy(key);
     }
 }
 
