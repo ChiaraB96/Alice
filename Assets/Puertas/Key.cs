@@ -11,6 +11,7 @@ public class Key : MonoBehaviour
             puertasScript.hasKey = true; // El jugador tiene la llave
             //puertasScript.CheckDistance();
             //puertasScript.CheckKey();
+            Destroy(gameObject);
         }
     }
 }

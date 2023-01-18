@@ -17,14 +17,9 @@ public class ItemSlot : MonoBehaviour
 
     public void Set(InventoryItem item)
     {
-        if (item == null || item.data == null || item.data.itemIcon == null)
-        {
-            Debug.LogError("Item or Item Data or Item Icon is not set");
-            return;
-        }
         _itemIcon.sprite = item.data.itemIcon;
 
-        if (item.stackSize <= 1)
+        if (item.stackSize <= 0)
         {
             _stackObj.SetActive(false);
             return;
