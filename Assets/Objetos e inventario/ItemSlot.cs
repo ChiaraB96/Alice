@@ -27,4 +27,10 @@ public class ItemSlot : MonoBehaviour
 
         _stackNumber.text = item.stackSize.ToString();
     }
+    public void Reset()
+    {
+        _itemIcon.sprite = null;
+        _stackObj.SetActive(false);
+        _stackNumber.text = "";
+    }
 }
