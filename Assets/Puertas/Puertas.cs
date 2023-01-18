@@ -27,7 +27,10 @@ public class Puertas : MonoBehaviour
 
     void OpenDoor()
     {
-        InventorySystem.Instance.Remove(itemData);
-        Destroy(door); // Destruye la puerta
+        for (int i = 0; i < keyCounter; i++)
+        {
+            InventorySystem.Instance.Remove(itemData, keyCounter);
+        }
+        Destroy(door);
     }
 }

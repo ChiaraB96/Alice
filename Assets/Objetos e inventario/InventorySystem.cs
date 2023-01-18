@@ -45,11 +45,14 @@ public class InventorySystem : MonoBehaviour
                 onInventoryChangedCallBack.Invoke();
             }
         }
-        public void Remove(InventoryItemData itemData)
+        public void Remove(InventoryItemData itemData, int quantity)
         {
             if(_itemDictionary.TryGetValue(itemData, out InventoryItem value))
             {
-                value.RemoveFromStack();
+                for(int i = 0; i < quantity; i++)
+                {
+                    value.RemoveFromStack();
+                }
 
                 if(value.stackSize == 0)
                 {
