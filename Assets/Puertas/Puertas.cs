@@ -6,6 +6,22 @@ public class Puertas : MonoBehaviour
 {
     public GameObject door; // Asigna la puerta en el Inspector de Unity
     public bool hasKey = false; // Almacena si el jugador tiene la llave o no
+    public GameObject player; // Asigna la referencia al jugador en el inspector
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (hasKey)
+            {
+                OpenDoor();
+            }
+            else
+            {
+                Debug.Log("No tienes la llave necesaria para abrir esta puerta");
+            }
+        }
+    }
 
     void CheckKey()
     {
