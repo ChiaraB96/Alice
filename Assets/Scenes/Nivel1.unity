@@ -18415,6 +18415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1829943094}
   hasKey: 0
+  player: {fileID: 0}
 --- !u!1001 &1833367392
 PrefabInstance:
   m_ObjectHideFlags: 0
