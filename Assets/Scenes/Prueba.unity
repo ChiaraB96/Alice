@@ -1351,13 +1351,29 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: advancedSettings.airControl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: movementSettings.BackwardSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: movementSettings.RunMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: advancedSettings.slowDownRate
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1574707
       objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.z
