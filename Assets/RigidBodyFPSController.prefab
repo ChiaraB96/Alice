@@ -333,10 +333,10 @@ MonoBehaviour:
     lockCursor: 1
   advancedSettings:
     groundCheckDistance: 0.1
-    stickToGroundHelperDistance: 0.6
-    slowDownRate: 10
+    stickToGroundHelperDistance: 0.5
+    slowDownRate: 20
     airControl: 1
-    shellOffset: 0
+    shellOffset: 0.1
 --- !u!114 &8576347513604416121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,7 +693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMin.y
