@@ -32,6 +32,9 @@ public class Movimiento : MonoBehaviour
         }
     }
 }
+
+
+
 /*
 using System.Collections;
 using System.Collections.Generic;
