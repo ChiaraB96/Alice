@@ -1,4 +1,4 @@
-﻿public class DialogueEventSystem
+﻿/*public class DialogueEventSystem
 {
     public delegate void DialogEvent();
     public static event DialogEvent OnDialogShown;
@@ -19,4 +19,4 @@
         if(OnDialogHidden != null)
             OnDialogHidden();
     }
-}
+}*/

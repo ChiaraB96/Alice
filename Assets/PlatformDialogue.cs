@@ -9,8 +9,6 @@ public class PlatformDialogue : MonoBehaviour
     public Text dialogueText; // Es el texto donde se muestra el dialogo 
     private Dictionary<string, string> platformDialogues; // Diccionario para almacenar los dialogos segun la plataforma
     private Dictionary<string, bool> platformDialoguesShown; // Diccionario para registrar si el dialogo de cada plataforma ya se ha mostrado
-    private Coroutine currentCoroutine; // variable para guardar la corutina actual
-    //private bool dialogueComplete = false;  bandera para indicar si el dialogo se ha completado
 
     private void Start()
     {
@@ -34,7 +32,7 @@ public class PlatformDialogue : MonoBehaviour
             {
                 if (!platformDialoguesShown[gameObject.name]) // si el dialogo de esta plataforma aun no se ha mostrado
                 {
-                    DialogueEventSystem.ShowDialog(); // se muestra el cuadro de dialogo
+                    StartCoroutine(ShowText(platformDialogues[gameObject.name])); // se inicia la corutina y se pasa como parametro el dialogo correspondiente a la plataforma actual
                     platformDialoguesShown[gameObject.name] = true; // se registra que el dialogo de esta plataforma ya se ha mostrado
                 }
             }
@@ -45,7 +43,20 @@ public class PlatformDialogue : MonoBehaviour
     {
         if (other.CompareTag("Player")) // si el objeto con el que colisiona tiene el tag "Player"
         {
-            DialogueEventSystem.HideDialog(); // se oculta el cuadro de dialogo
+            StopAllCoroutines(); // detiene cualquier coroutine en ejecucion 
+            dialogueBox.SetActive(false); //se desactiva el cuadro de dialogo
+            dialogueText.text = ""; // se limpia el texto
+        }
+    }
+    
+    IEnumerator ShowText(string text) // se define la corutina
+    {
+        dialogueBox.SetActive(true); // se activa el cuadro de dialogo
+        dialogueText.text = ""; // se limpia el texto 
+        foreach (char c in text) // se recorre cada letra del dialogo
+        {
+            dialogueText.text += c; // se añade la letra actual al texto
+            yield return new WaitForSeconds(0.3f); // espera 0.05 segundos antes de mostrar la siguiente letra
         }
     }
 }
