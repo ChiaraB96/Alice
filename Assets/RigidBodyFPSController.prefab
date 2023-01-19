@@ -283,9 +283,9 @@ MonoBehaviour:
   cam: {fileID: 8576347514240970344}
   movementSettings:
     ForwardSpeed: 5
-    BackwardSpeed: 2
+    BackwardSpeed: 3
     StrafeSpeed: 2
-    RunMultiplier: 2
+    RunMultiplier: 1.5
     RunKey: 304
     JumpForce: 25
     SlopeCurveModifier:
@@ -334,8 +334,8 @@ MonoBehaviour:
   advancedSettings:
     groundCheckDistance: 0.1
     stickToGroundHelperDistance: 0.6
-    slowDownRate: 20
-    airControl: 0
+    slowDownRate: 10
+    airControl: 1
     shellOffset: 0
 --- !u!114 &8576347513604416121
 MonoBehaviour:
@@ -697,15 +697,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_SizeDelta.y
