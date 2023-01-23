@@ -21,11 +21,6 @@ public class WallRun : MonoBehaviour
     public float fuerzaCambiarMuro = 2500f;
     public float fuerzaSaltoMuro = 100f;
 
-    public Camera cam;
-    public float RotationCam1;
-    public float RotationCam2;
-    public float RotationCam3;
-
     void Update()
     {
         muroDerecha = Physics.Raycast(transform.position, orientacion.right, alcance,WallRunLayer);
@@ -52,8 +47,7 @@ public class WallRun : MonoBehaviour
             EmpezarWR();
            
         }
-        
-
+    
 
         if (Input.GetKey("d") && muroIzquierda && estaWR)
         {
@@ -87,17 +81,11 @@ public class WallRun : MonoBehaviour
        if (muroDerecha){
             rb.AddForce(orientacion.right * fuerzaAgarre * Time.deltaTime);
 
-            cam.transform.Rotate(Vector3.down, RotationCam1 * Time.deltaTime);
-            cam.transform.Rotate(Vector3.forward, RotationCam2 * Time.deltaTime);
-            cam.transform.Rotate(Vector3.left, RotationCam3 * Time.deltaTime);
         }
 
         if (muroIzquierda){
             rb.AddForce(-orientacion.right * fuerzaAgarre * Time.deltaTime);
 
-            cam.transform.Rotate(Vector3.up, RotationCam1 * Time.deltaTime);
-            cam.transform.Rotate(Vector3.forward, RotationCam2 * Time.deltaTime);
-            cam.transform.Rotate(Vector3.right, RotationCam3 * Time.deltaTime);
         }
              
     }
