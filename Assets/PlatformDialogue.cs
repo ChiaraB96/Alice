@@ -15,9 +15,9 @@ public class PlatformDialogue : MonoBehaviour
     private void Start()
     {
         platformDialogues = new Dictionary<string, string>();
-        platformDialogues.Add("Platform1", "¡Bienvenido a esta plataformalalalalalalalalalalalala!");
-        platformDialogues.Add("Platform2", "¡Bienvenido a esta plataforma2!");
-        platformDialogues.Add("Platform3", "¡Bienvenido a esta plataforma3!");
+        platformDialogues.Add("Plataforma1", "¡Puto el que lo lee, desputo si me aprobas!");
+        platformDialogues.Add("Plataforma2", "¡Bienvenido a esta plataforma2!");
+        platformDialogues.Add("Plataforma3", "¡Bienvenido a esta plataforma3!");
         //agregar mas plataformas y sus dialogos 
         platformDialoguesShown = new Dictionary<string, bool>(); // se crea el diccionario de dialogos mostrados
         foreach (string platform in platformDialogues.Keys)
