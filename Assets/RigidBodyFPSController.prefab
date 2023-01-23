@@ -372,7 +372,7 @@ MonoBehaviour:
   orientacion: {fileID: 8576347514067185049}
   WallRunLayer:
     serializedVersion: 2
-    m_Bits: 7168
+    m_Bits: 1024
   wallRunVelocidad: 2000
   fuerzaAgarre: 500
   alcance: 2
