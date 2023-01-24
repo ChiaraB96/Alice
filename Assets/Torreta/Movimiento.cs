@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-   
+
 public class Movimiento : MonoBehaviour
 {
     public GameObject bulletPrefab;
