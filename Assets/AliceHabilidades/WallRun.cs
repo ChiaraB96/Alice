@@ -60,7 +60,7 @@ public class WallRun : MonoBehaviour
         if (Input.GetKey("a") && muroDerecha && estaWR)
         {
              PararWR();
-            rb.AddForce(-orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
+            rb.AddForce(orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
             rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
         }
 

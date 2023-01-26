@@ -373,11 +373,11 @@ MonoBehaviour:
   WallRunLayer:
     serializedVersion: 2
     m_Bits: 1024
-  wallRunVelocidad: 2000
+  wallRunVelocidad: 1300
   fuerzaAgarre: 500
   alcance: 2
   fuerzaCambiarMuro: 2500
-  fuerzaSaltoMuro: 100
+  fuerzaSaltoMuro: 500
 --- !u!1001 &1964361877944978172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -689,19 +689,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_SizeDelta.y
