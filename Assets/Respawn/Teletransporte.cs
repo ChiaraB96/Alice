@@ -8,7 +8,10 @@ public class Teletransporte : MonoBehaviour
     public Transform respawnPoint;
 
     private void OnTriggerEnter(Collider other) {
-        player.transform.position = respawnPoint.transform.position;
+        Rigidbody rb = player.GetComponent<Rigidbody>();
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        rb.MovePosition(respawnPoint.position);
     }
 
 
