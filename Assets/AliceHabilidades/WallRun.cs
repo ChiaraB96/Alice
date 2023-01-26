@@ -23,8 +23,8 @@ public class WallRun : MonoBehaviour
 
     void Update()
     {
-        muroDerecha = Physics.Raycast(transform.position, orientacion.right, alcance,WallRunLayer);
-        muroIzquierda = Physics.Raycast(transform.position, -orientacion.right, alcance,WallRunLayer);
+        muroDerecha = Physics.Raycast(transform.position, orientacion.right, alcance, WallRunLayer);
+        muroIzquierda = Physics.Raycast(transform.position, -orientacion.right, alcance, WallRunLayer);
         CheckearSiWR();
 
         if(estaWR != true)
