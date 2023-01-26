@@ -54,6 +54,7 @@ public class WallRun : MonoBehaviour
              PararWR();
             rb.AddForce(-orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
             rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
+            EmpezarWR();
             
         }
 
@@ -62,6 +63,7 @@ public class WallRun : MonoBehaviour
              PararWR();
             rb.AddForce(orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
             rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
+            EmpezarWR();
         }
 
                 else if (!muroIzquierda && !muroDerecha )
