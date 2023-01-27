@@ -6,6 +6,7 @@ public class Movimiento : MonoBehaviour
     public Transform firePoint;
     public float fireRate = 1f;
     public float detectionRadius = 10f;
+    public float addforce = 2500f;
 
     private float fireTimer;
 
@@ -26,7 +27,7 @@ public class Movimiento : MonoBehaviour
                 {
                     fireTimer = 0;
                     GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                    bullet.GetComponent<Rigidbody>().AddForce(firePoint.forward * 1400);
+                    bullet.GetComponent<Rigidbody>().AddForce(firePoint.forward * addforce);
                 }
             }
         }

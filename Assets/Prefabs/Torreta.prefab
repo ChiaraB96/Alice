@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7756543639163538785}
   m_Layer: 0
-  m_Name: Torreta 1
+  m_Name: Torreta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,8 +335,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4619121444863261628, guid: 4bca06b881832594a95fbb793b33442d, type: 3}
   firePoint: {fileID: 7756543640906158178}
-  fireRate: 1.4
-  detectionRadius: 10
+  fireRate: 1.2
+  detectionRadius: 7
+  addforce: 2500
 --- !u!1 &7756543640906158179
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7430688827511031852}
   - component: {fileID: 7430688827518004780}
   - component: {fileID: 7430688827508933900}
-  - component: {fileID: 1648440383338846449}
+  - component: {fileID: 5057390880217078746}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 65
   reverse: 0
---- !u!114 &1648440383338846449
+--- !u!114 &5057390880217078746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,11 +120,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7430688827516006632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 812ab83f3a79cf840b8494bd1e36c1a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fc369bc883d83142b8bdc9427564f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  respawnPoint: {fileID: 0}
+  checkpoint: {fileID: 0}
 --- !u!1 &7430688827516006634
 GameObject:
   m_ObjectHideFlags: 0
