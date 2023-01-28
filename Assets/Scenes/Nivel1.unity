@@ -1626,7 +1626,7 @@ Transform:
   m_LocalScale: {x: 30, y: 0.1, z: 30}
   m_Children: []
   m_Father: {fileID: 631288667}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &180250739
 PrefabInstance:
@@ -3332,7 +3332,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.2, z: 2}
   m_Children: []
   m_Father: {fileID: 376006369}
-  m_RootOrder: 43
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &312187366
 BoxCollider:
@@ -4304,6 +4304,7 @@ Transform:
   - {fileID: 1917400532}
   - {fileID: 1308871904}
   - {fileID: 1435651737}
+  - {fileID: 312187365}
   - {fileID: 958017618}
   - {fileID: 1076527477}
   - {fileID: 1400299457}
@@ -4311,6 +4312,7 @@ Transform:
   - {fileID: 1090237630}
   - {fileID: 25961084}
   - {fileID: 726022734}
+  - {fileID: 1126836759}
   - {fileID: 1407687504}
   - {fileID: 1361864719}
   - {fileID: 2024347467}
@@ -4323,8 +4325,6 @@ Transform:
   - {fileID: 1060059147}
   - {fileID: 2105242150}
   - {fileID: 1833367393}
-  - {fileID: 312187365}
-  - {fileID: 1126836759}
   m_Father: {fileID: 515874635}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5654,7 +5654,7 @@ Transform:
   m_LocalScale: {x: 15, y: 0.1, z: 45}
   m_Children: []
   m_Father: {fileID: 579991785}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &486534826
 PrefabInstance:
@@ -6010,7 +6010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515874635}
   m_Layer: 0
-  m_Name: Esenario
+  m_Name: Escenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6491,8 +6491,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1625222351}
   - {fileID: 485023821}
+  - {fileID: 1625222351}
   - {fileID: 697755752}
   - {fileID: 2104498324}
   m_Father: {fileID: 73060626}
@@ -7157,8 +7157,8 @@ Transform:
   m_Children:
   - {fileID: 1633889417}
   - {fileID: 958761272}
-  - {fileID: 761446318}
   - {fileID: 178164332}
+  - {fileID: 761446318}
   m_Father: {fileID: 2094519074}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11764,46 +11764,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: fuerzaSaltoMuro
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: fuerzaCambiarMuro
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: alcance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: wallRunVelocidad
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: advancedSettings.airControl
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.14
@@ -12921,7 +12881,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.2, z: 2}
   m_Children: []
   m_Father: {fileID: 376006369}
-  m_RootOrder: 44
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1126836760
 BoxCollider:

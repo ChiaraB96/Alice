@@ -373,11 +373,11 @@ MonoBehaviour:
   WallRunLayer:
     serializedVersion: 2
     m_Bits: 1024
-  wallRunVelocidad: 500
+  wallRunVelocidad: 700
   fuerzaAgarre: 200
-  alcance: 1
-  fuerzaCambiarMuro: 2500
-  fuerzaSaltoMuro: 1000
+  alcance: 2
+  fuerzaCambiarMuro: 5000
+  fuerzaSaltoMuro: 700
 --- !u!1001 &1964361877944978172
 PrefabInstance:
   m_ObjectHideFlags: 0
