@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Puertas : MonoBehaviour
+public class BlockeaTeletransporte : MonoBehaviour
 {
-    public GameObject door; // Asigna la puerta en el Inspector de Unity
+    public GameObject bloque ; // Asigna la puerta en el Inspector de Unity
     public int keyCounter = 0; // Almacena la cantidad de llaves que el jugador tiene
     public int requiredKeys = 1; // Almacena la cantidad de llaves necesarias para abrir la puerta
     public GameObject player; // Asigna la referencia al jugador en el inspector
@@ -16,21 +16,12 @@ public class Puertas : MonoBehaviour
         {
             if (keyCounter >= requiredKeys)
             {
-                OpenDoor();
+                Destroy(bloque );
             }
             else
             {
-                Debug.Log("No tienes la cantidad de particulas necesarias para abrir esta puerta");
+                Debug.Log("No tienes la cantidad de particulas necesarias para desbloquear el Teletransporte");
             }
         }
-    }
-
-    void OpenDoor()
-    {
-        for (int i = 0; i < keyCounter; i++)
-        {
-            InventorySystem.Instance.Remove(itemData, keyCounter);
-        }
-        Destroy(door);
     }
 }
