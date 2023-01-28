@@ -5,8 +5,8 @@ using UnityEngine;
 public class Puertas : MonoBehaviour
 {
     public GameObject door; // Asigna la puerta en el Inspector de Unity
-    public int keyCounter = 0; // Almacena la cantidad de llaves que el jugador tiene
-    public int requiredKeys = 1; // Almacena la cantidad de llaves necesarias para abrir la puerta
+    public int keyCounter = 0; // Almacena la cantidad de particulas que el jugador tiene
+    public int requiredKeys = 1; // Almacena la cantidad de particulas necesarias para abrir la puerta
     public GameObject player; // Asigna la referencia al jugador en el inspector
     public InventoryItemData itemData; // Asigna el item en el inspector
 

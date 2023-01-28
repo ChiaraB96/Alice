@@ -9,7 +9,7 @@ public class Key : MonoBehaviour
         if (other.CompareTag("Player")) // Verifica si el objeto que colisiona es el jugador
         {
             puertasScript.keyCounter++; // aumenta en 1 el contador de llaves
-            Destroy(gameObject);
+
         }
     }
 }

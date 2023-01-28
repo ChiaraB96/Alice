@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4099557903220575206}
   - component: {fileID: 669712214574774705}
   - component: {fileID: 7453938874736494170}
-  - component: {fileID: 2693484391844167012}
+  - component: {fileID: 4819629382236827401}
   m_Layer: 0
   m_Name: BlockeaTeletransporte
   m_TagString: Untagged
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2693484391844167012
+--- !u!114 &4819629382236827401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5973548691368706131}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2360d54e4dc82e4387efb97c1600c31, type: 3}
+  m_Script: {fileID: 11500000, guid: 4def16d0dd7abd048859991b822c567f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 5973548691368706131}
+  bloque: {fileID: 5973548691368706131}
   keyCounter: 0
-  requiredKeys: 3
+  requiredKeys: 1
   player: {fileID: 0}
-  itemData: {fileID: 11400000, guid: 7bdbcd19112bdc547a403df3ffae8853, type: 2}
+  itemData: {fileID: 0}
