@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Puertas : MonoBehaviour
 {
-    public GameObject door; // Asigna la puerta en el Inspector de Unity
-    public int keyCounter = 0; // Almacena la cantidad de particulas que el jugador tiene
-    public int requiredKeys = 1; // Almacena la cantidad de particulas necesarias para abrir la puerta
-    public GameObject player; // Asigna la referencia al jugador en el inspector
-    public InventoryItemData itemData; // Asigna el item en el inspector
+    public GameObject door;
+    public int keyCounter = 0;
+    public int requiredKeys = 1;
+    public GameObject player;
+    public InventoryItemData itemData;
+    public GameObject messageObject;
+    public Text text;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -20,7 +23,7 @@ public class Puertas : MonoBehaviour
             }
             else
             {
-                Debug.Log("No tienes la cantidad de particulas necesarias para abrir esta puerta");
+                ShowMessage();
             }
         }
     }
@@ -32,5 +35,20 @@ public class Puertas : MonoBehaviour
             InventorySystem.Instance.Remove(itemData, keyCounter);
         }
         Destroy(door);
+    }
+
+    void ShowMessage()
+    {
+        messageObject.SetActive(true);
+        text.gameObject.SetActive(true);
+        text.text = "No tienes la cantidad de particulas necesarias para abrir esta puerta.";
+        StartCoroutine(HideMessage());
+    }
+
+    IEnumerator HideMessage()
+    {
+        yield return new WaitForSeconds(5);
+        messageObject.SetActive(false);
+        text.text = "";
     }
 }
