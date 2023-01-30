@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 
-public class VozDialogo : MonoBehaviour
+public class VozDialogoT : MonoBehaviour
 {
     public GameObject dialogueBox; // Es la caja de dialogo
     public Text dialogueText; // Es el texto donde se muestra el dialogo
@@ -15,16 +15,16 @@ public class VozDialogo : MonoBehaviour
     private void Start()
     {
         aliceConcienciaDialogos = new Dictionary<string, string>();
-        aliceConcienciaDialogos.Add("Plataforma1", "");
-        aliceConcienciaDialogos.Add("Plataforma2", "");
-        aliceConcienciaDialogos.Add("Plataforma3", "");
-        aliceConcienciaDialogos.Add("Plataforma4", "");
-        aliceConcienciaDialogos.Add("Plataforma5", "");
-        aliceConcienciaDialogos.Add("Plataforma6", "");
-        aliceConcienciaDialogos.Add("Plataforma7", "");
-        aliceConcienciaDialogos.Add("Plataforma8", "");
-        aliceConcienciaDialogos.Add("Plataforma9", "");
-        aliceConcienciaDialogos.Add("Plataforma10", "");
+        aliceConcienciaDialogos.Add("DialogoInicial", "Bienvenido/a, aquí aprenderas todo lo que necesitas para comenzar tu aventura.");
+        aliceConcienciaDialogos.Add("Dialogo2", "Empecemos... \n Como habrás notado puedes moverte utilizando las teclas A, D, S y W. Presiona shift para correr y espacio para saltar.");
+        aliceConcienciaDialogos.Add("Dialogo3", "Aquí aprenderás y practicarás las habilidades de Alice. \n Tambien encontrarás una simulación que al finalizarla te llevará al primer nivel.");
+        aliceConcienciaDialogos.Add("Dialogo4", "Este es el entrenamiento de Wall Running \n avanza a la pared, presiona saltar y luego mantén precionada la tecla D.");
+        aliceConcienciaDialogos.Add("Dialogo5", "Bien! Ahora prueba hacia la izquierda, avanza, saltar y luego manten la tecla A.");
+        aliceConcienciaDialogos.Add("Dialogo6", "Ya casi lo tienes! Prueba intercambiar de muros, comienza manteniendo precionada la D y luego cambia a la A para cambiar de muro.");
+        aliceConcienciaDialogos.Add("Dialogo7", "Genial! Completaste el entrenamiento de Wall Running! \n Recuerda que puedes practicar cuantas veces quieras.\n Puedes acercarte a la particula para teletrasportarte devuelta a la zona inicial.");
+        aliceConcienciaDialogos.Add("Dialogo8", "Aqui puedes practicar el uso del Lazo, toma un poco de distancia de la plataforma, apunta al gancho rosa con la mira y haz click para lanzar el Lazo");
+        aliceConcienciaDialogos.Add("Dialogo9", "Muy bien! Si tienes problemas para alcanzar el siguiente gancho prueba acercandote un poco");
+        aliceConcienciaDialogos.Add("Dialogo10", "Genial! Completaste el entrenamiento de Lazo! \n Recuerda que puedes practicar cuantas veces quieras.\n Puedes acercarte a la particula para teletrasportarte devuelta a la zona inicial.");
         //agregar mas plataformas y sus dialogos 
         aliceConcienciaDialogosShown = new Dictionary<string, bool>(); // se crea el diccionario de dialogos mostrados
         foreach (string platform in aliceConcienciaDialogos.Keys)
@@ -34,7 +34,7 @@ public class VozDialogo : MonoBehaviour
         isShowing = false;
     }
 
-    private void OnCollisionStay(Collision other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player") && !isShowing) // si el objeto con el que colisiona tiene el tag "Player" y no se esta mostrando el dialogo
         {
@@ -57,7 +57,7 @@ public class VozDialogo : MonoBehaviour
         foreach (char c in text) // se recorre cada letra del dialogo
         {
             dialogueText.text += c; // se añade la letra actual al texto
-            yield return new WaitForSeconds(0.03f); // espera 0.3 segundos antes de mostrar la siguiente letra
+            yield return new WaitForSeconds(0.01f); // espera 0.3 segundos antes de mostrar la siguiente letra
         }
         isShowing = false; // se registra que ya no se esta mostrando el dialogo
         StartCoroutine(HideMessage());
