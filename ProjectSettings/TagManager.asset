@@ -9,6 +9,7 @@ TagManager:
   - WallRunLayer
   - Area
   - CheckPoint
+  - Target
   layers:
   - Default
   - TransparentFX

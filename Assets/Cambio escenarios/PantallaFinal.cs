@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class PantallaFinal : MonoBehaviour
 {
-    public void EscenaJuego(){
-        SceneManager.LoadScene("Tuto");
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
-    public void Salir(){
+    public void Salir()
+    {
         Application.Quit();
     }
 }
