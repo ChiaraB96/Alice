@@ -783,7 +783,8 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 850534801}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1936526390909848983, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!1001 &75025357
 PrefabInstance:
@@ -4481,7 +4482,8 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 850534801}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1936526390909848983, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!1001 &564535481
 PrefabInstance:
@@ -5106,7 +5108,8 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 429033946}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1485131483582133427, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!1 &653802121
 GameObject:
@@ -6194,6 +6197,26 @@ PrefabInstance:
     - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291825975471734362, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291825976046928057, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291825976046928057, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442682265839053942, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442682265839053942, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7575,7 +7598,8 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1828838591}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
 --- !u!1 &990294525
 GameObject:
@@ -9040,7 +9064,8 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 850534801}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1936526390909848983, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!1 &1208407991
 GameObject:
@@ -10328,7 +10353,8 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1828838591}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
 --- !u!4 &1444101880 stripped
 Transform:
