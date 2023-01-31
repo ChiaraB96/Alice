@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Nivel1aNivel2 : MonoBehaviour
+public class CambioEscena : MonoBehaviour
 {
+    public string escena;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene("Nivel2");
+            SceneManager.LoadScene(escena);
         }
     }
 }
