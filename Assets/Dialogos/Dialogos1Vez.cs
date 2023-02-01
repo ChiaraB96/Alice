@@ -32,6 +32,8 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo6n1", "Mmm... Algo no se ve bien en este nivel, deberíamos abanzar con cuidado_");
         dialogos.Add("Dialogo7n1", "Rápido, juntemos las partículas y vamonos de aquí _");
         dialogos.Add("Dialogo8n1", "¡Sabía que podrias! ¡Vamos! _");
+        dialogos.Add("Dialogon2", "¡Estámos cada vez mas cerca! Puedo sentir como la IA se debilita, tengamos seguro esta furiosa. \n Adelante, veamos las tareas_");
+        dialogos.Add("Dialogo2n2", "Esta Zona parece bastante extensa. Apunta bien y no te caigas o tendremos que volver a empezar_");
      
         //dialogos IA
         dialogos.Add("Dialogo13", "Oh, Alice... parece que tenemos un sujeto de prueba. Puedes considerarme como una 'Compañera' o algo así, como sea, completa los desafios si puedes.\n Consejo: Ten cuidado donde saltas...");
@@ -43,6 +45,7 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo5IAn1", "¡Buena elección! O quizas no... \n Todavía puedes arrepentirte...");
         dialogos.Add("Dialogo6IAn1", "Espero que tengas buena memoria... \n  Déjame ayudarte, empieza por la derecha... O era la izquierda? Parece que no lo recuerdo muy bien despues de todo");
         dialogos.Add("Dialogo7IAn1", "Adelante... Inténtalo...");
+        dialogos.Add("DialogoIAn2", "Esta bien, si quieres sigue intentandolo... \n Pero no creas que te lo dejaré tan fácil.");
 
         dialogosShown = new Dictionary<string, bool>(); // se crea el diccionario de dialogos mostrados
         foreach (string platform in dialogos.Keys)

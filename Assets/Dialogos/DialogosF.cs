@@ -25,7 +25,7 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("Dialogo8", "Aqui puedes practicar el uso del Lazo, toma un poco de distancia de la plataforma, apunta al gancho rosa con la mira y haz click para lanzar el Lazo_");
         DialogosFijos.Add("Dialogo9", "Muy bien! Si tienes problemas para alcanzar el siguiente gancho prueba acercandote un poco_");
         DialogosFijos.Add("Dialogo10", "Genial! Completaste el entrenamiento de Lazo!_ \n Recuerda que puedes practicar cuantas veces quieras.\n Puedes acercarte a la particula para teletrasportarte devuelta a la zona inicial_");
-        DialogosFijos.Add("Dialogo5n1 ", "");
+        DialogosFijos.Add("", "");
         //IA
         DialogosFijos.Add("DialogoFijo1", "Jajajaja. Nunca me canso de verte caer.");
         DialogosFijos.Add("DialogoFijo2", "Huy! Casi lo logras... Quee peeena...");
@@ -44,6 +44,7 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("Tareasn1", "Secuencia de puertas: \n Amarillo Azul Rojo. \n Partículas: \n3 Amarillas \n1 Azul \n4 Rojas ");
         DialogosFijos.Add("ZonaCompleta", "¡Completaste la Zona! ¡Vamos a la siguiente!_");
         DialogosFijos.Add("ZonaCompletaUltima", "¡Completaste la Zona! Rápido, vámonos de aquí_");
+        DialogosFijos.Add("Tareasn2", "Secuencia de puertas: \n Azul Rojo Amarillo. \n Partículas: \n6 Azul \n2 Rojas \n3 Amarillas");
 
         isShowing = false;
     }
