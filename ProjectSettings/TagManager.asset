@@ -10,6 +10,7 @@ TagManager:
   - Area
   - CheckPoint
   - Target
+  - Wall
   layers:
   - Default
   - TransparentFX
