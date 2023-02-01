@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 
-public class DialogosT : MonoBehaviour
+public class Dialogos1Vez : MonoBehaviour
 {
     public GameObject dialogueBox; // Es la caja de dialogo
     public Text dialogueText; // Es el texto donde se muestra el dialogo
@@ -24,12 +24,25 @@ public class DialogosT : MonoBehaviour
         dialogos.Add("Dialogo12", "Junta todas las partículas para desbloquear la puerta \n Cuando llegues a la plataforma amarilla se guardara el progreso de la Zona_");
         dialogos.Add("Dialogo14", "¿Tienes todas las particulas de la zona? \n Acercate a la puerta para desbloquearla_");
         dialogos.Add("Dialogo18", "¡Bien!¡Sabía que lo lograrias!\n Acercate al portal para avanzar al siguiente nivel_");
+        dialogos.Add("Dialogon1", "¡Llegamos al primer nivel! Acércate a la zona marcada más adelante para ver las misiones \n Consejo: Puedes volver siempre que quieras para recordarlas_");
+        dialogos.Add("Dialogo2n1", "Parece que hay algo extraño con estas plataformas, deberiamos elegir una con cuidado_");
+        dialogos.Add("Dialogo3n1", "¡Si, esta era la correcta! Deberíamos recordarlo por si acaso_");
+        dialogos.Add("Dialogo4n1", "Parece que esta es la primera zona, apúrate antes de que nos descubran_");
+        dialogos.Add("Dialogo5n1", "¡Uf! Eso estuvo cerca_");
+        dialogos.Add("Dialogo6n1", "Mmm... Algo no se ve bien en este nivel, deberíamos abanzar con cuidado_");
+        dialogos.Add("Dialogo7n1", "Rápido, juntemos las partículas y vamonos de aquí _");
+        dialogos.Add("Dialogo8n1", "¡Sabía que podrias! ¡Vamos! _");
      
         //dialogos IA
         dialogos.Add("Dialogo13", "Oh, Alice... parece que tenemos un sujeto de prueba. Puedes considerarme como una 'Compañera' o algo así, como sea, completa los desafios si puedes.\n Consejo: Ten cuidado donde saltas...");
         dialogos.Add("Dialogo15", "¿No creiste que sería tan facil verdad? \n Veamos si puedes con la siguiente etapa.");
         dialogos.Add("Dialogo16", "¡Ya era hora! Me aburri taaanto de verte caer una y otra vez...");
         dialogos.Add("Dialogo17", "Parece que lo lograste... \n No me alegraría tanto si fuera tu, esto es solo el comienzo. Jajaja...");
+        dialogos.Add("Dialogo3IAn1", "Quizás este nivel sea de tu talla.");
+        dialogos.Add("Dialogo4IAn1", "Seguro llegaste hasta aquí de pura suerte. Como sea, elige un camíno...");
+        dialogos.Add("Dialogo5IAn1", "¡Buena elección! O quizas no... \n Todavía puedes arrepentirte...");
+        dialogos.Add("Dialogo6IAn1", "Espero que tengas buena memoria... \n  Déjame ayudarte, empieza por la derecha... O era la izquierda? Parece que no lo recuerdo muy bien despues de todo");
+        dialogos.Add("Dialogo7IAn1", "Adelante... Inténtalo...");
 
         dialogosShown = new Dictionary<string, bool>(); // se crea el diccionario de dialogos mostrados
         foreach (string platform in dialogos.Keys)
