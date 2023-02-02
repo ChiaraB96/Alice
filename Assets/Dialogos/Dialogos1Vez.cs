@@ -32,8 +32,12 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo6n1", "Mmm... Algo no se ve bien en este nivel, deberíamos abanzar con cuidado_");
         dialogos.Add("Dialogo7n1", "Rápido, juntemos las partículas y vamonos de aquí _");
         dialogos.Add("Dialogo8n1", "¡Sabía que podrias! ¡Vamos! _");
-        dialogos.Add("Dialogon2", "¡Estámos cada vez mas cerca! Puedo sentir como la IA se debilita, tengamos seguro esta furiosa. \n Adelante, veamos las tareas_");
-        dialogos.Add("Dialogo2n2", "Esta Zona parece bastante extensa. Apunta bien y no te caigas o tendremos que volver a empezar_");
+        dialogos.Add("Dialogon2", "¡Estámos cada vez mas cerca! Puedo sentir como la IA se debilita, tengamos cuidado seguro esta furiosa. \n Adelante, veamos las tareas_");
+        dialogos.Add("Dialogo2n2", "Esta Zona es bastante extensa. Apunta bien y no te caigas o tendremos que volver a empezar_");
+        dialogos.Add("Dialogo3n2", "Parece que aqui estamos a salvo de los disparos. Podemos usar esta plataforma para descanzar un poco_");
+        dialogos.Add("Dialogo4n2", "Ya casi lo logras, no pierdas la calma_");
+        dialogos.Add("Dialogo5n2", "¡Vamos, se que puedes hacerlo!_");
+        dialogos.Add("DialogoFinal", "¡Lo hiciste!¡Jamás dudé de ti! ¿Será que esta vez al fin seremos libres? _");
      
         //dialogos IA
         dialogos.Add("Dialogo13", "Oh, Alice... parece que tenemos un sujeto de prueba. Puedes considerarme como una 'Compañera' o algo así, como sea, completa los desafios si puedes.\n Consejo: Ten cuidado donde saltas...");
@@ -46,6 +50,13 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo6IAn1", "Espero que tengas buena memoria... \n  Déjame ayudarte, empieza por la derecha... O era la izquierda? Parece que no lo recuerdo muy bien despues de todo");
         dialogos.Add("Dialogo7IAn1", "Adelante... Inténtalo...");
         dialogos.Add("DialogoIAn2", "Esta bien, si quieres sigue intentandolo... \n Pero no creas que te lo dejaré tan fácil.");
+        dialogos.Add("Dialogo2IAn2", "Noté que esta prueba no te resultó tan dificil la última vez. Veamos que tal te va con los nuevos regalos que te preparé.");
+        dialogos.Add("Dialogo3IAn2", "Creo que no fue una buena decisión venir hasta aquí despues de todo. Espero que no te haya costado mucho. Jajajaja");
+        dialogos.Add("Dialogo4IAn2", "Ya puedes dejar de intentarlo. Jamás te dejaré escapar.");
+        dialogos.Add("Dialogo5IAn2", "Yo no estaría tan seguro de mi misma si fuera tú. Sería una lastima que vuelvas a caer");
+        dialogos.Add("Dialogo6IAn2", "Parece que al final te subestime. Nunca imaginé que llegarías tan lejos. No volveré a cometer el mismo error.");
+
+
 
         dialogosShown = new Dictionary<string, bool>(); // se crea el diccionario de dialogos mostrados
         foreach (string platform in dialogos.Keys)
