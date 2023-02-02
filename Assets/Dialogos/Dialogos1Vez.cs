@@ -18,7 +18,7 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos = new Dictionary<string, string>();
         //dialogos conciencia
         dialogos.Add("DialogoInicial", "Hola Alice, aquí aprenderas todo lo que necesitas para comenzar tu aventura_");
-        dialogos.Add("Dialogo2", "Empecemos... \n Como habrás notado puedes moverte utilizando las teclas A, D, S y W. Presiona shift para correr y espacio para saltar_");
+        dialogos.Add("Dialogo2", "Empecemos... \n Como habrás notado puedes moverte utilizando las teclas A, D, S y W. Manten shift para correr y presiona espacio para saltar_");
         dialogos.Add("Dialogo3", "Aquí aprenderás y practicarás tus habilidades \n Tambien encontrarás una simulación que al finalizarla te llevará al primer nivel_");
         dialogos.Add("Dialogo11", "Esta es la simulación, una vez completa podras avanzar al siguiente nivel\n No te preocupes, volveré más adelante para ayudarte \nBuena Suerte! Ve con cuidado!_");
         dialogos.Add("Dialogo12", "Camina sobre las partículas para recojerlas. Una vez que juntes todas podras desbloquear la puerta \n Cuando llegues a la plataforma amarilla se guardara el progreso de la Zona_");
@@ -84,6 +84,10 @@ public class Dialogos1Vez : MonoBehaviour
 
     IEnumerator ShowText(string text) // se define la corutina
     {
+        if (showTextCoroutine != null)
+        {
+        StopCoroutine(showTextCoroutine);
+        }
         dialogueText.text = ""; //se limpia el texto
         dialogueBox.SetActive(true); // se activa el cuadro de dialogo 
         foreach (char c in text) // se recorre cada letra del dialogo
