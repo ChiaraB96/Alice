@@ -19,13 +19,12 @@ public class DialogosF : MonoBehaviour
         DialogosFijos = new Dictionary<string, string>();
         //conciencia
         DialogosFijos.Add("Dialogo4", "Este es el entrenamiento de Wall Running \n avanza a la pared, presiona saltar y luego mantén precionada la tecla D_");
-        DialogosFijos.Add("Dialogo5", "Bien! Ahora prueba hacia la izquierda, avanza, saltar y luego manten la tecla A_");
+        DialogosFijos.Add("Dialogo5", "Bien! Ahora prueba hacia la izquierda, avanza, saltar y luego manten la tecla A\n Al hacer Wall Running no necesitas precionar la W, pero puedes hacerlo si tienes problemas para avanzar_");
         DialogosFijos.Add("Dialogo6", "Ya casi lo tienes! Prueba intercambiar de muros, comienza manteniendo precionada la A y luego cambia a la D para cambiar de muro_");
         DialogosFijos.Add("Dialogo7", "Genial! Completaste el entrenamiento de Wall Running!_ \n Recuerda que puedes practicar cuantas veces quieras.\n Puedes acercarte a la particula para teletrasportarte devuelta a la zona inicial_");
         DialogosFijos.Add("Dialogo8", "Aqui puedes practicar el uso del Lazo, toma un poco de distancia de la plataforma, apunta al gancho rosa con la mira y haz click para lanzar el Lazo_");
         DialogosFijos.Add("Dialogo9", "Muy bien! Si tienes problemas para alcanzar el siguiente gancho prueba acercandote un poco_");
         DialogosFijos.Add("Dialogo10", "Genial! Completaste el entrenamiento de Lazo!_ \n Recuerda que puedes practicar cuantas veces quieras.\n Puedes acercarte a la particula para teletrasportarte devuelta a la zona inicial_");
-        DialogosFijos.Add("", "");
         //IA
         DialogosFijos.Add("DialogoFijo1", "Jajajaja. Nunca me canso de verte caer.");
         DialogosFijos.Add("DialogoFijo2", "Huy! Casi lo logras... Quee peeena...");
@@ -48,6 +47,8 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("ZonaCompleta", "¡Completaste la Zona! ¡Vamos a la siguiente!_");
         DialogosFijos.Add("ZonaCompletaUltima", "¡Completaste la Zona! Rápido, vámonos de aquí_");
         DialogosFijos.Add("Tareasn2", "Secuencia de puertas: \n Azul Rojo Amarillo. \n Partículas: \n6 Azul \n2 Rojas \n3 Amarillas");
+        DialogosFijos.Add("Puerta de Zona WR", "Parece que aún no has practicado el Wall Running. \n Debes completar el tutorial de habilidades para poder acceder aquí_");
+        DialogosFijos.Add("Puerta de Zona L", "Practica el uso del Lazo, lo necesitaras para más adelante. \n Debes completar el tutorial de habilidades para poder acceder aquí_");
 
         isShowing = false;
     }

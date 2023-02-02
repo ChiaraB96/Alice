@@ -1517,6 +1517,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 733997428292605971, guid: db5983ba15d06a145ad7578c62f150ff, type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 733997428460473867, guid: db5983ba15d06a145ad7578c62f150ff, type: 3}
       propertyPath: escena
       value: 
@@ -1845,6 +1849,7 @@ Transform:
   - {fileID: 757060168}
   - {fileID: 217793334}
   - {fileID: 1974370649}
+  - {fileID: 151866844}
   m_Father: {fileID: 880184480}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2156,6 +2161,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90eb90800fa073d40b733a9d7c9b832e, type: 3}
+--- !u!1 &151866843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151866844}
+  - component: {fileID: 151866846}
+  - component: {fileID: 151866845}
+  m_Layer: 0
+  m_Name: ZonaCompletaUltima
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151866844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151866843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -39.67, y: 15, z: 6.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 125540785}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &151866845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151866843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 187361660}
+  dialogueText: {fileID: 187361659}
+  duracion: 5
+--- !u!65 &151866846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151866843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &156851677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,7 +2417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6453,7 +6518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8737739089227075660, guid: 763e01ff9bdaaaa4e872b0f16b015dd0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.25
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 8737739089227075660, guid: 763e01ff9bdaaaa4e872b0f16b015dd0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7561,7 +7626,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 676286153}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -11004,7 +11069,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1058011373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -11535,7 +11600,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1111223844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -12003,7 +12068,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1146446986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -12296,7 +12361,7 @@ GameObject:
   - component: {fileID: 1169638293}
   - component: {fileID: 1169638292}
   m_Layer: 0
-  m_Name: Dialogo5IAn2
+  m_Name: Dialogo6IAn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12314,7 +12379,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721796058}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1169638292
 MonoBehaviour:
@@ -12515,7 +12580,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204050609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -13017,7 +13082,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1236409503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -13152,7 +13217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1246893256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -14347,7 +14412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4305879972233329858, guid: 0185910241f84cc45813ea3a3f4d8370, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.32
+      value: 7.65
       objectReference: {fileID: 0}
     - target: {fileID: 4305879972233329858, guid: 0185910241f84cc45813ea3a3f4d8370, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14387,7 +14452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4305879972233329858, guid: 0185910241f84cc45813ea3a3f4d8370, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4305879972233329859, guid: 0185910241f84cc45813ea3a3f4d8370, type: 3}
       propertyPath: m_Name
@@ -15313,7 +15378,7 @@ GameObject:
   - component: {fileID: 1468510112}
   - component: {fileID: 1468510111}
   m_Layer: 0
-  m_Name: Dialogo6IAn2
+  m_Name: Dialogo5IAn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15331,7 +15396,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721796058}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1468510111
 MonoBehaviour:
@@ -16256,7 +16321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604108682}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -42.54, y: 24.11, z: -10.98}
+  m_LocalPosition: {x: -42.54, y: 24.11, z: -10.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721796058}
@@ -17121,7 +17186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1665032969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -17260,7 +17325,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1693711147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -17528,8 +17593,8 @@ Transform:
   - {fileID: 1665032970}
   - {fileID: 79868937}
   - {fileID: 103360036}
-  - {fileID: 1169638291}
   - {fileID: 1468510110}
+  - {fileID: 1169638291}
   - {fileID: 1960868669}
   - {fileID: 1204050610}
   m_Father: {fileID: 880184480}
@@ -17576,7 +17641,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1723777311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -18533,7 +18598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.66
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18541,7 +18606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.82
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -19946,7 +20011,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1960868668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361661}
@@ -21575,7 +21640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066998109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.01, y: 24.07, z: -0.87}
+  m_LocalPosition: {x: -46.01, y: 24.55, z: -0.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 125540785}
@@ -21590,7 +21655,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2066998109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361660}
@@ -21607,7 +21672,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.2, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2069076720
 GameObject:
@@ -22257,7 +22322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135160357}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.875, y: 27.261, z: -9.95}
+  m_LocalPosition: {x: -45.875, y: 27.53, z: -9.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 125540785}
@@ -22272,7 +22337,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2135160357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
+  m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 187361660}
@@ -22289,7 +22354,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.2, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2146332058
 PrefabInstance:

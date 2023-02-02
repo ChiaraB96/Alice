@@ -21,7 +21,7 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo2", "Empecemos... \n Como habrás notado puedes moverte utilizando las teclas A, D, S y W. Presiona shift para correr y espacio para saltar_");
         dialogos.Add("Dialogo3", "Aquí aprenderás y practicarás tus habilidades \n Tambien encontrarás una simulación que al finalizarla te llevará al primer nivel_");
         dialogos.Add("Dialogo11", "Esta es la simulación, una vez completa podras avanzar al siguiente nivel\n No te preocupes, volveré más adelante para ayudarte \nBuena Suerte! Ve con cuidado!_");
-        dialogos.Add("Dialogo12", "Junta todas las partículas para desbloquear la puerta \n Cuando llegues a la plataforma amarilla se guardara el progreso de la Zona_");
+        dialogos.Add("Dialogo12", "Camina sobre las partículas para recojerlas. Una vez que juntes todas podras desbloquear la puerta \n Cuando llegues a la plataforma amarilla se guardara el progreso de la Zona_");
         dialogos.Add("Dialogo14", "¿Tienes todas las particulas de la zona? \n Acercate a la puerta para desbloquearla_");
         dialogos.Add("Dialogo18", "¡Bien!¡Sabía que lo lograrias!\n Acercate al portal para avanzar al siguiente nivel_");
         dialogos.Add("Dialogon1", "¡Llegamos al primer nivel! Acércate a la zona marcada más adelante para ver las misiones \n Consejo: Puedes volver siempre que quieras para recordarlas_");
