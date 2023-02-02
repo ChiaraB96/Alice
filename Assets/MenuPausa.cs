@@ -24,13 +24,6 @@ public class MenuPausa : MonoBehaviour
             menuDesactivado();
         }
     }
-    public void Continuar(){
-        menuDesactivado();
-        menuOn = false; 
-    }
-    public void Salir(){
-        Application.Quit();
-    }
     private void menuDesactivado(){
         menuDePausa.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;

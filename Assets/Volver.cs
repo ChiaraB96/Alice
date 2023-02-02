@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
-using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class Volver : MonoBehaviour
 {
     public void EscenaJuego(){
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Menu");
     }
 
     public void Salir(){
-        EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }
