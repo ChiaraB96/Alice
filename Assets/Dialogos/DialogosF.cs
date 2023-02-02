@@ -34,6 +34,9 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("DialogoFijo5", "Ups! Parece que volviste a caeer.");
         DialogosFijos.Add("DialogoFijo6", "Te daré una pista, por aquí no era.");
         DialogosFijos.Add("DialogoFijo7", "¿No te cansas de caer? Jajaja");
+        DialogosFijos.Add("DialogoFijo8", "Si quieres puedo conseguirte una cita con el suelo, veo que te gusta mucho. Jajaja");
+        DialogosFijos.Add("DialogoFijo9", "Te noto algo nerviosa, ¿Que pasa? ¿No puedes?");
+        DialogosFijos.Add("DialogoFijo10", "¿A eso le llamas saltar? Jajaja");
         DialogosFijos.Add("DialogoIAn1", "Parece que comenzaste con el pie izquierdo. Jajaja.");
         DialogosFijos.Add("Dialogo2IAn1", "Veo que correr por las paredes no es lo tuyo. Lo tendre en cuenta para más adeltante. Jajaja");
         DialogosFijos.Add("Dialogo8IAn1", "Ups! Creo que no fue una muy buena desición despues de todo. Parece que tus habilidades no funcionan aquí, que peena..");
