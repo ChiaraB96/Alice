@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 8576347514231347628}
   - component: {fileID: 8576347513604416121}
   - component: {fileID: 8576347513604416126}
+  - component: {fileID: 6938372346685906754}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Player
@@ -378,6 +379,19 @@ MonoBehaviour:
   alcance: 2
   fuerzaCambiarMuro: 5000
   fuerzaSaltoMuro: 700
+--- !u!114 &6938372346685906754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8576347514242608206}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b056e4617da1f043befcf7be3020adb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuDePausa: {fileID: 0}
 --- !u!1001 &1964361877944978172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,19 +767,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_SizeDelta.y
