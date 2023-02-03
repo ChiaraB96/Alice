@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class abreMenuPausa : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class abreMenuPausa : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
-            menuOn = !menuOn;
+            menuOn = true;
         }
         if(menuOn==true){
             menuDePausa.SetActive(true);
@@ -20,16 +21,15 @@ public class abreMenuPausa : MonoBehaviour
             Cursor.visible = true;
             Time.timeScale = 0;
         }
-        else{
-            if(menuDePausa.activeSelf) {
-                DesactivarMenu();
-            }
-        }
     }
     
      public void Continuar() 
     {
-       DesactivarMenu();
+        menuDePausa.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1;
+        menuOn= false;
     }
 
     public void Salir() 
@@ -37,10 +37,10 @@ public class abreMenuPausa : MonoBehaviour
         confirmar.SetActive(true);
     }
 
-    private void DesactivarMenu(){
-        menuDePausa.SetActive(false);
-       Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        Time.timeScale = 1;
+    public void Si() {
+        EditorApplication.isPlaying = false;
+        Application.Quit();
     }
+
+
 }
