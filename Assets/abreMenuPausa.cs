@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
 
 public class abreMenuPausa : MonoBehaviour
 {
@@ -38,7 +38,6 @@ public class abreMenuPausa : MonoBehaviour
     }
 
     public void Si() {
-        EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
