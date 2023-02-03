@@ -15,4 +15,7 @@ public class MainMenu : MonoBehaviour
         EditorApplication.isPlaying = false;
         Application.Quit();
     }
+    public void Menu(){
+        SceneManager.LoadScene("Menu");
+    }
 }
