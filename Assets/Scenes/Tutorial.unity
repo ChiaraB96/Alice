@@ -2934,7 +2934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b770e4ba35a6a4ea4da66b89c756f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 504259069}
+  checkpoint: {fileID: 0}
 --- !u!4 &298188660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4305879972233329858, guid: 0185910241f84cc45813ea3a3f4d8370, type: 3}
@@ -4939,11 +4939,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd047182b8e519246b29569dbaa3bd52, type: 3}
---- !u!1 &504259069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5035436969764246675, guid: dd047182b8e519246b29569dbaa3bd52, type: 3}
-  m_PrefabInstance: {fileID: 504259068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &504259070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1067980997969420011, guid: dd047182b8e519246b29569dbaa3bd52, type: 3}
@@ -7419,7 +7414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11258,11 +11253,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1067980997969420011, guid: dd047182b8e519246b29569dbaa3bd52, type: 3}
   m_PrefabInstance: {fileID: 1245060515}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1245060517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5035436969764246675, guid: dd047182b8e519246b29569dbaa3bd52, type: 3}
-  m_PrefabInstance: {fileID: 1245060515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1248643471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13887,7 +13877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b770e4ba35a6a4ea4da66b89c756f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 1245060517}
+  checkpoint: {fileID: 0}
 --- !u!4 &1573239669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5566793890160512345, guid: 20dc718a86c2e6144b70c462a002b8fb, type: 3}
