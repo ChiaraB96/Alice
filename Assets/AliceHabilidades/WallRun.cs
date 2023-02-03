@@ -36,20 +36,20 @@ public class WallRun : MonoBehaviour
 
     private void CheckearSiWR()
     {
-        if(Input.GetKey("a") && muroIzquierda)
+        if(Input.GetKeyDown("a") && muroIzquierda)
         {
             EmpezarWR();
           
         }
 
-        if (Input.GetKey("d") && muroDerecha)
+        if (Input.GetKeyDown("d") && muroDerecha)
         {     
             EmpezarWR();
            
         }
     
 
-        if (Input.GetKey("d") && muroIzquierda && estaWR)
+        if (Input.GetKeyDown("d") && muroIzquierda && estaWR)
         {
             EmpezarWR();
             rb.AddForce(orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
@@ -58,7 +58,7 @@ public class WallRun : MonoBehaviour
             
         }
 
-        if (Input.GetKey("a") && muroDerecha && estaWR)
+        if (Input.GetKeyDown("a") && muroDerecha && estaWR)
         {
             EmpezarWR();
             rb.AddForce(-orientacion.right * fuerzaCambiarMuro * Time.deltaTime);

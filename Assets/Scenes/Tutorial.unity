@@ -7400,6 +7400,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_ColorMultiplier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: alcance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_Enabled
       value: 1
