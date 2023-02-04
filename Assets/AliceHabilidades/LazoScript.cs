@@ -53,7 +53,6 @@ public class LazoScript : MonoBehaviour
             }
         } else {
             lazo.transform.parent = holder.transform;
-            this.GetComponent<Rigidbody>().useGravity = true;
         }
 
     }
