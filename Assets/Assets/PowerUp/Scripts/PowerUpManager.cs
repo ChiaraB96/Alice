@@ -9,6 +9,7 @@ public class PowerUpManager : Singleton<PowerUpManager>
 	private Queue<CustomizablePowerUp> powerUpsLogs;
 	private ushort powerUpLogLimit = 3;
 	
+	
 	public int Count {
 		get {
 			return powerUps.Count;

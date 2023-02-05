@@ -7366,11 +7366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: fuerzaAgarre
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: wallRunVelocidad
-      value: 700
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: WallRunLayer.m_Bits
@@ -7378,7 +7378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: fuerzaCambiarMuro
-      value: 5000
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: fuerzaSaltoMuro
