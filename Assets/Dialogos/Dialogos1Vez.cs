@@ -28,8 +28,8 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo2n1", "Parece que hay algo extraño con estas plataformas, deberiamos elegir una con cuidado_");
         dialogos.Add("Dialogo3n1", "¡Si, esta era la correcta! Deberíamos recordarlo por si acaso_");
         dialogos.Add("Dialogo4n1", "Parece que esta es la primera zona, apúrate antes de que nos descubran_");
-        dialogos.Add("Dialogo5n1", "¡Uf! Eso estuvo cerca_");
-        dialogos.Add("Dialogo6n1", "Mmm... Algo no se ve bien en este nivel, deberíamos abanzar con cuidado_");
+        dialogos.Add("Dialogo5n1", "Esta zona no parece tan difícil, ¿No te parece extraño?_");
+        dialogos.Add("Dialogo6n1", "Mmm... Algo no se ve bien en este nivel, deberíamos avanzar con cuidado_");
         dialogos.Add("Dialogo7n1", "Rápido, juntemos las partículas y vamonos de aquí _");
         dialogos.Add("Dialogo8n1", "¡Sabía que podrias! ¡Vamos! _");
         dialogos.Add("Dialogon2", "¡Estámos cada vez mas cerca! Puedo sentir como la IA se debilita, tengamos cuidado seguro esta furiosa. \n Adelante, veamos las tareas_");
