@@ -39,6 +39,7 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("DialogoIAn1", "Parece que comenzaste con el pie izquierdo. Jajaja.");
         DialogosFijos.Add("Dialogo2IAn1", "Veo que correr por las paredes no es lo tuyo. Lo tendre en cuenta para más adeltante. Jajaja");
         DialogosFijos.Add("Dialogo8IAn1", "Ups! Creo que no fue una muy buena desición despues de todo. Parece que tus habilidades no funcionan aquí, que peena..");
+        DialogosFijos.Add("DialogoIAAzul", "Jajajajaja... \n ¿Volviste a caer en mis trampas? Si tuviera sentimientos sentiría pena por tí.");
         
     
 
