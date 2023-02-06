@@ -1214,6 +1214,10 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 266397978}
+    - target: {fileID: 5644809837426004876, guid: 135ad8a192152a1438ae24bbc07be52a, type: 3}
+      propertyPath: m_Value
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5644809837695671980, guid: 135ad8a192152a1438ae24bbc07be52a, type: 3}
       propertyPath: m_Name
       value: SetVolumen
