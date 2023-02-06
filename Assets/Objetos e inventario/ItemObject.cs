@@ -7,9 +7,15 @@ public class ItemObject : MonoBehaviour
     public InventoryItemData itemData;
     public UnityEvent OnPickUp; 
 
-    public AudioSource particula;
     public AudioClip sonido;
     public float volumen;
+
+    private AudioSource particula;
+
+    private void Start()
+    {
+        particula = Camera.main.GetComponent<AudioSource>();
+    }
 
     public void HandlePickUp()
     {
