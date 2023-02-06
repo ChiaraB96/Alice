@@ -2187,7 +2187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151866843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.67, y: 15, z: 6.16}
+  m_LocalPosition: {x: -39.67, y: 15.56, z: 6.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 125540785}
@@ -2219,7 +2219,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &156851677
 GameObject:
@@ -2429,7 +2429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291825975471734362, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -33.25
+      value: -41.61
       objectReference: {fileID: 0}
     - target: {fileID: 8576347513604416121, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: maxDist
@@ -8902,7 +8902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.565
+      value: -3.239
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21175,7 +21175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1250600813832890557, guid: 39886e0a1eefa9446a71f61f585f525c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.77
+      value: 44.18
       objectReference: {fileID: 0}
     - target: {fileID: 1250600813832890557, guid: 39886e0a1eefa9446a71f61f585f525c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21640,7 +21640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066998109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.01, y: 24.55, z: -0.76}
+  m_LocalPosition: {x: -46.06, y: 24.35, z: -0.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 125540785}
@@ -21672,7 +21672,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2069076720
 GameObject:
@@ -22354,7 +22354,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2146332058
 PrefabInstance:

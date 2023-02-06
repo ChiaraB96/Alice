@@ -7360,38 +7360,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416121, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: fuerzaAgarre
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: wallRunVelocidad
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: WallRunLayer.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: fuerzaCambiarMuro
-      value: 2500
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: fuerzaSaltoMuro
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 1222900315}
-    - target: {fileID: 8576347513604416126, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: orientacion
-      value: 
-      objectReference: {fileID: 1929012209}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.5
@@ -7439,10 +7407,6 @@ PrefabInstance:
     - target: {fileID: 8576347514242608206, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_Name
       value: RigidBodyFPSController
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576347514245992232, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
@@ -11071,11 +11035,6 @@ Transform:
 --- !u!1 &1222900310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8576347514242608206, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-  m_PrefabInstance: {fileID: 861140878}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1222900315 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 8576347514245992232, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
   m_PrefabInstance: {fileID: 861140878}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1222900316 stripped
@@ -16273,11 +16232,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4305879972233329858, guid: 0185910241f84cc45813ea3a3f4d8370, type: 3}
   m_PrefabInstance: {fileID: 917986801}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1929012209 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8576347514067185049, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
-  m_PrefabInstance: {fileID: 861140878}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1936223112
 PrefabInstance:

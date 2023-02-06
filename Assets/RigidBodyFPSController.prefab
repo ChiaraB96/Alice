@@ -1621,7 +1621,7 @@ MonoBehaviour:
     m_Bits: 1024
   wallRunVelocidad: 700
   fuerzaAgarre: 200
-  alcance: 2
+  alcance: 1.5
   fuerzaCambiarMuro: 5000
   fuerzaSaltoMuro: 700
 --- !u!1001 &1964361877944978172
