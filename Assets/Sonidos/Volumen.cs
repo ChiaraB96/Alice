@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Volumen : MonoBehaviour
 {
     public Slider slider;
-    public float sliderValue;
+    private float sliderValue;
 
     void Start()
     {
