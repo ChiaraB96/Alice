@@ -18596,17 +18596,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teletransporte Amarillo
       objectReference: {fileID: 0}
+    - target: {fileID: 5589147200772325718, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5589147200772325718, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
+      propertyPath: m_Center.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.98
+      value: 2.87
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.82
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.1
+      value: 6.48
       objectReference: {fileID: 0}
     - target: {fileID: 5589147200772325719, guid: 632aff57ca3ec2b40924dec2aa1c242b, type: 3}
       propertyPath: m_LocalRotation.x
