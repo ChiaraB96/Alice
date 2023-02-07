@@ -16,4 +16,10 @@ public class MainMenu : MonoBehaviour
     public void Menu(){
         SceneManager.LoadScene("Menu");
     }
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;    
+    }
 }
