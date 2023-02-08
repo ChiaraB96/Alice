@@ -40,7 +40,7 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("Dialogo2IAn1", "Veo que correr por las paredes no es lo tuyo. Lo tendré  en cuenta para más adeltante. Jajaja");
         DialogosFijos.Add("Dialogo8IAn1", "Ups! Creo que no fue una muy buena desición después de todo. Parece que tus habilidades no funcionan aquí, que peena..");
         DialogosFijos.Add("DialogoIAAzul", "Jajajajaja... \n ¿Volviste a caer en mis trampas? Si tuviera sentimientos sentiría pena por tí.");
-        
+        DialogosFijos.Add("PuertaBloquea", "¡Que pena! Ya no puedes pasar por aquí");
     
 
         //tareas
@@ -50,6 +50,7 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("Tareasn2", "Secuencia de puertas: \n Azul Rojo Amarillo. \n Partículas: \n6 Azul \n2 Rojas \n3 Amarillas");
         DialogosFijos.Add("Puerta de Zona WR", "Parece que aún no has practicado el Wall Running. \n Debes completar el tutorial de habilidades para poder acceder aquí_");
         DialogosFijos.Add("Puerta de Zona L", "Práctica el uso del Lazo, lo necesitarás para más adelante. \n Debes completar el tutorial de habilidades para poder acceder aquí_");
+
 
         isShowing = false;
     }

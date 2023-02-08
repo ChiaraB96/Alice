@@ -25,6 +25,11 @@ public class WallRun : MonoBehaviour
         CheckearSiWR();
         muroDerecha = Physics.Raycast(transform.position, orientacion.right, alcance, WallRunLayer);
         muroIzquierda = Physics.Raycast(transform.position, -orientacion.right, alcance, WallRunLayer);
+
+        if (!Input.GetKey("a") && !Input.GetKey("d"))
+        {
+        PararWR();
+        }
     }
 
     private void CheckearSiWR()
