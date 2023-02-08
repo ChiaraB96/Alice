@@ -2,20 +2,20 @@
 
 public class Bala : MonoBehaviour
 {
-    public float lifetime = 3f;
-    private float timer;
+    public float vida = 1f;
+    private float temporizador;
 
     void Update()
     {
-        timer += Time.deltaTime;
-        if(timer >= lifetime)
+        temporizador += Time.deltaTime;
+        if(temporizador >= vida)
         {
             Destroy(gameObject);
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

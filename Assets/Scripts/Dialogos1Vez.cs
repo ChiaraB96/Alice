@@ -5,17 +5,17 @@ using System.Collections;
 
 public class Dialogos1Vez : MonoBehaviour
 {
-    public GameObject dialogueBox; // Es la caja de dialogo
-    public Text dialogueText; // Es el texto donde se muestra el dialogo
+    public GameObject cajaTexto;
+    public Text texto; 
     public float duracion = 5f;
-    private Dictionary<string, string> dialogos; // Diccionario para almacenar los dialogos segun la plataforma
-    private Dictionary<string, bool> dialogosShown; // Diccionario para registrar si el dialogo de cada plataforma ya se ha mostrado
-    private bool isShowing; // variable para registrar si se esta mostrando el dialogo
-    private Coroutine showTextCoroutine; // referencia a la coroutine ShowText
-
+    private Dictionary<string, string> dialogos;
+    private Dictionary<string, bool> dialogosMostrados; 
+    private bool mostrando;
+    private Coroutine mostrarTextoCorrutina; 
+    
     private void Start()
     {
-        dialogos = new Dictionary<string, string>();
+        dialogos = new Dictionary<string, string>();//Diccionario de diálogos
         //dialogos conciencia
         dialogos.Add("DialogoInicial", "Hola Alice, aquí aprenderás todo lo que necesitas para comenzar tu aventura_");
         dialogos.Add("Dialogo2", "Empecemos, como habrás notado puedes moverte utilizando las teclas A, D, S y W. Mantén shift para correr y presiona espacio para saltar_");
@@ -38,7 +38,6 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo4n2", "Ya casi lo logras, no pierdas la calma_");
         dialogos.Add("Dialogo5n2", "¡Vamos, se que puedes hacerlo!_");
         dialogos.Add("DialogoFinal", "¡Lo hiciste!¡Jamás dudé de ti! ¿Será que esta vez al fin seremos libres? _");
-     
         //dialogos IA
         dialogos.Add("Dialogo13", "Oh, Alice... parece que tenemos un sujeto de prueba. Puedes considerarme como una 'Compañera' o algo así, como sea, completa los desafíos si puedes.\n Consejo: Ten cuidado donde saltas...");
         dialogos.Add("Dialogo15", "¿No creíste que sería tan fácil verdad? \n Veamos si puedes con la siguiente etapa.");
@@ -56,54 +55,52 @@ public class Dialogos1Vez : MonoBehaviour
         dialogos.Add("Dialogo5IAn2", "Yo no estaría tan seguro de mi misma si fuera tú. Sería una lástima que vuelvas a caer");
         dialogos.Add("Dialogo6IAn2", "Parece que al final te subestime. Nunca imaginé que llegarías tan lejos. No volveré a cometer el mismo error.");
 
-
-
-        dialogosShown = new Dictionary<string, bool>(); // se crea el diccionario de dialogos mostrados
+        dialogosMostrados = new Dictionary<string, bool>(); // Diccionario de dialogos mostrados
         foreach (string platform in dialogos.Keys)
         {
-            dialogosShown.Add(platform, false); // se agrega una entrada para cada plataforma con el valor de falso
+            dialogosMostrados.Add(platform, false); // se agrega una entrada para cada plataforma con el valor de falso
         }
-        isShowing = false;
+        mostrando = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && !isShowing) // si el objeto con el que colisiona tiene el tag "Player" y no se esta mostrando el dialogo
+        if (other.gameObject.CompareTag("Player") && !mostrando)
         {
-            if (dialogos.ContainsKey(gameObject.name)) // si el diccionario contiene una entrada con el nombre de la plataforma actual
+            if (dialogos.ContainsKey(gameObject.name)) 
             {
-                if (!dialogosShown[gameObject.name]) // si el dialogo de esta plataforma aun no se ha mostrado
+                if (!dialogosMostrados[gameObject.name])
                 {
-                    showTextCoroutine = StartCoroutine(ShowText(dialogos[gameObject.name])); // se guarda la referencia a la coroutine y se inicia la corutina y se pasa como parametro el dialogo correspondiente a la plataforma actual
-                    dialogosShown[gameObject.name] = true; // se registra que el dialogo de esta plataforma ya se ha mostrado
-                    isShowing = true; // se registra que se esta mostrando el dialogo
+                    mostrarTextoCorrutina = StartCoroutine(MostrarTexto(dialogos[gameObject.name])); 
+                    dialogosMostrados[gameObject.name] = true; 
+                    mostrando = true;
                 }
             }
         }
     }
 
-    IEnumerator ShowText(string text) // se define la corutina
+    IEnumerator MostrarTexto(string text)
     {
-            if (isShowing)
+            if (mostrando== true)
             {
-                StopCoroutine(showTextCoroutine);
+                StopCoroutine(mostrarTextoCorrutina);
             }
-        dialogueText.text = ""; //se limpia el texto
-        dialogueBox.SetActive(true); // se activa el cuadro de dialogo
-        foreach (char c in text) // se recorre cada letra del dialogo
+        texto.text = ""; 
+        cajaTexto.SetActive(true); 
+        foreach (char c in text) 
         {
-            dialogueText.text += c; // se añade la letra actual al texto
-            yield return new WaitForSeconds(0.01f); // espera 0.01 segundos antes de mostrar la siguiente letra
+            texto.text += c; 
+            yield return new WaitForSeconds(0.01f); 
         }
-        isShowing = false;
-        StartCoroutine(HideMessage());
+        mostrando = false;
+        StartCoroutine(EsconderTexto());
  
     }
 
-    IEnumerator HideMessage()
+    IEnumerator EsconderTexto()
     {
         yield return new WaitForSeconds(duracion);
-        dialogueBox.SetActive(false);
-        dialogueText.text = "";
+        cajaTexto.SetActive(false);
+        texto.text = "";
     }
 }

@@ -319,11 +319,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bb3f73f99513947b1347bd777704f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4619121444863261628, guid: 4bca06b881832594a95fbb793b33442d, type: 3}
-  firePoint: {fileID: 7756543640906158178}
-  fireRate: 1.2
-  detectionRadius: 7
-  addforce: 2500
+  balaPrefab: {fileID: 4619121444863261628, guid: 4bca06b881832594a95fbb793b33442d, type: 3}
+  puntoDisparo: {fileID: 7756543640906158178}
+  velocidadDisparo: 1.15
+  radioDisparo: 8
 --- !u!1 &7756543640906158179
 GameObject:
   m_ObjectHideFlags: 0

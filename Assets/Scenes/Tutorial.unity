@@ -1463,7 +1463,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &129164615
 MonoBehaviour:
@@ -1477,8 +1477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &129164616
 BoxCollider:
@@ -2386,8 +2386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 5
 --- !u!65 &204149194
 BoxCollider:
@@ -2989,8 +2989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &308543439
 BoxCollider:
@@ -3116,8 +3116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 3
 --- !u!65 &336932557
 BoxCollider:
@@ -3261,7 +3261,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &354507970
 MonoBehaviour:
@@ -3275,8 +3275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &354507971
 BoxCollider:
@@ -3730,8 +3730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 3
 --- !u!65 &401923409
 BoxCollider:
@@ -5252,8 +5252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 3
 --- !u!65 &549130440
 BoxCollider:
@@ -5491,7 +5491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 12
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &575134192
 MonoBehaviour:
@@ -5505,8 +5505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &575134193
 BoxCollider:
@@ -5828,8 +5828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 5
 --- !u!65 &625186635
 BoxCollider:
@@ -6251,8 +6251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 5
 --- !u!65 &676535684
 BoxCollider:
@@ -6979,7 +6979,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 9
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &814644551
 MonoBehaviour:
@@ -6993,8 +6993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &814644552
 BoxCollider:
@@ -8126,8 +8126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!4 &934431549 stripped
 Transform:
@@ -9000,7 +9000,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1018465397
 MonoBehaviour:
@@ -9014,8 +9014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1018465398
 BoxCollider:
@@ -10406,7 +10406,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1160553877
 MonoBehaviour:
@@ -10420,8 +10420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1160553878
 BoxCollider:
@@ -10480,8 +10480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1162050499
 BoxCollider:
@@ -10664,8 +10664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 3
 --- !u!65 &1208402506
 BoxCollider:
@@ -10910,7 +10910,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 13
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1210904311
 MonoBehaviour:
@@ -10924,8 +10924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1210904312
 BoxCollider:
@@ -12818,8 +12818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 3
 --- !u!65 &1482391899
 BoxCollider:
@@ -13974,6 +13974,10 @@ Transform:
   - {fileID: 929007086}
   - {fileID: 1162050497}
   - {fileID: 308543437}
+  - {fileID: 1018465396}
+  - {fileID: 1873400601}
+  - {fileID: 575134191}
+  - {fileID: 1210904310}
   - {fileID: 2070624053}
   - {fileID: 354507969}
   - {fileID: 129164614}
@@ -13981,10 +13985,6 @@ Transform:
   - {fileID: 1780448583}
   - {fileID: 1160553876}
   - {fileID: 814644550}
-  - {fileID: 1018465396}
-  - {fileID: 1873400601}
-  - {fileID: 575134191}
-  - {fileID: 1210904310}
   m_Father: {fileID: 1325167517}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15103,7 +15103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1780448584
 MonoBehaviour:
@@ -15117,8 +15117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1780448585
 BoxCollider:
@@ -15584,8 +15584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 3
 --- !u!65 &1840261984
 BoxCollider:
@@ -15702,7 +15702,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 11
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1873400602
 MonoBehaviour:
@@ -15716,8 +15716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1873400603
 BoxCollider:
@@ -15762,7 +15762,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1873429719
 MonoBehaviour:
@@ -15776,8 +15776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &1873429720
 BoxCollider:
@@ -16681,8 +16681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efd09c5ed2dfbf498f788c2e4a8f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 52525446}
-  dialogueText: {fileID: 467000971}
+  cajaTexto: {fileID: 52525446}
+  texto: {fileID: 467000971}
   duracion: 5
 --- !u!65 &2016723345
 BoxCollider:
@@ -17151,7 +17151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587586781}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &2070624054
 MonoBehaviour:
@@ -17165,8 +17165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 896252946}
+  texto: {fileID: 1347489683}
   duracion: 5
 --- !u!65 &2070624055
 BoxCollider:
@@ -17650,8 +17650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 0}
+  texto: {fileID: 0}
   duracion: 5
 --- !u!4 &2126157379 stripped
 Transform:
@@ -17748,8 +17748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620b971746b7cf444ad7fd45f6db065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 896252946}
-  dialogueText: {fileID: 1347489683}
+  cajaTexto: {fileID: 0}
+  texto: {fileID: 0}
   duracion: 5
 --- !u!4 &2143356386 stripped
 Transform:
@@ -18223,6 +18223,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6162287465369162900, guid: c17e98d6af199724f800e7c160f4e2ee, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 896252946}
+    - target: {fileID: 6162287465369162900, guid: c17e98d6af199724f800e7c160f4e2ee, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 1347489683}
     - target: {fileID: 8667161784043543758, guid: c17e98d6af199724f800e7c160f4e2ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -18267,7 +18275,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6162287465369162900, guid: c17e98d6af199724f800e7c160f4e2ee, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c17e98d6af199724f800e7c160f4e2ee, type: 3}
 --- !u!1001 &8956223655599803837
 PrefabInstance:

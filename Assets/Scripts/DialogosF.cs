@@ -6,17 +6,16 @@ using System.Collections;
 
 public class DialogosF : MonoBehaviour
 {
-    public GameObject dialogueBox;
-    public Text dialogueText;
+    public GameObject cajaTexto;
+    public Text texto;
     public float duracion = 5f;
     private Dictionary<string, string> DialogosFijos;
-    private bool isShowing;
-    private Coroutine showTextCoroutine;
-
+    private bool mostrando;
+    private Coroutine mostrarTextoCorrutina;
  
     private void Start()
     {
-        DialogosFijos = new Dictionary<string, string>();
+        DialogosFijos = new Dictionary<string, string>();//Diccionario de diálogos
         //conciencia
         DialogosFijos.Add("Dialogo4", "Este es el entrenamiento de Wall Running \n avanza a la pared, presiona saltar y luego mantén presionada la tecla D_");
         DialogosFijos.Add("Dialogo5", "Bien! Ahora prueba hacia la izquierda, avanza, saltar y luego mantén la tecla A\n Al hacer Wall Running no necesitas precionar la W, pero puedes hacerlo si tienes problemas para avanzar_");
@@ -41,8 +40,6 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("Dialogo8IAn1", "Ups! Creo que no fue una muy buena desición después de todo. Parece que tus habilidades no funcionan aquí, que peena..");
         DialogosFijos.Add("DialogoIAAzul", "Jajajajaja... \n ¿Volviste a caer en mis trampas? Si tuviera sentimientos sentiría pena por tí.");
         DialogosFijos.Add("PuertaBloquea", "¡Que pena! Ya no puedes pasar por aquí");
-    
-
         //tareas
         DialogosFijos.Add("Tareasn1", "Secuencia de puertas: \n Amarillo Azul Rojo. \n Partículas: \n3 Amarillas \n1 Azul \n4 Rojas ");
         DialogosFijos.Add("ZonaCompleta", "¡Completaste la Zona! ¡Vamos a la siguiente!_");
@@ -51,31 +48,30 @@ public class DialogosF : MonoBehaviour
         DialogosFijos.Add("Puerta de Zona WR", "Parece que aún no has practicado el Wall Running. \n Debes completar el tutorial de habilidades para poder acceder aquí_");
         DialogosFijos.Add("Puerta de Zona L", "Práctica el uso del Lazo, lo necesitarás para más adelante. \n Debes completar el tutorial de habilidades para poder acceder aquí_");
 
-
-        isShowing = false;
+        mostrando = false;
     }
 
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && !isShowing)
+        if (other.gameObject.CompareTag("Player") && !mostrando)
         {
             if (DialogosFijos.ContainsKey(gameObject.name))
             {
-                dialogueText.text = DialogosFijos[gameObject.name];
-                dialogueBox.SetActive(true);
-                isShowing = true;
-                StartCoroutine(HideMessage());
+                texto.text = DialogosFijos[gameObject.name];
+                cajaTexto.SetActive(true);
+                mostrando = true;
+                StartCoroutine(EsconderTexto());
             }
         }
     }
 
 
-    IEnumerator HideMessage()
+    IEnumerator EsconderTexto()
     {
         yield return new WaitForSeconds(duracion);
-        dialogueBox.SetActive(false);
-        dialogueText.text = "";
-        isShowing = false;
+        cajaTexto.SetActive(false);
+        texto.text = "";
+        mostrando = false;
     }
 }

@@ -6,9 +6,9 @@ public class ChangeCheckpoint : MonoBehaviour
 {
     public GameObject checkpoint;
     
-    void OnCollisionEnter(Collision plyr)
+    void OnCollisionEnter(Collision other)
     {
-        if (plyr.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
             Destroy(checkpoint);
     }
 }
