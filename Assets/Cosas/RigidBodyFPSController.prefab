@@ -2218,6 +2218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HudBar
       objectReference: {fileID: 0}
+    - target: {fileID: 5838710741788389665, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
+      propertyPath: m_Name
+      value: Imagen
+      objectReference: {fileID: 0}
     - target: {fileID: 6020744941957991294, guid: 08089948ce35d3c429ece3ccbd82c9ef, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 35
@@ -2298,7 +2302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4779829022752517673, guid: 2a2683a7708207a43a23996891962164, type: 3}
       propertyPath: m_Name
-      value: Inventory
+      value: Inventario
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a2683a7708207a43a23996891962164, type: 3}

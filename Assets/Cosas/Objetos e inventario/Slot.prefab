@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 7951095921402197518}
   - component: {fileID: 325508149386250512}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Icono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 7971926980367955830}
   - component: {fileID: 7971926980367955831}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Imagen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,6 +372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b1ac1e9fce740242b54184e1e8f1c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemIcon: {fileID: 325508149386250512}
-  _stackObj: {fileID: 7971926980367955829}
-  _stackNumber: {fileID: 8964864485309602560}
+  icono: {fileID: 325508149386250512}
+  objeto: {fileID: 7971926980367955829}
+  numero: {fileID: 8964864485309602560}

@@ -4921,11 +4921,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d448dcc91ac32741b0e118b3769b92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 0bad2adc48ae98144bc76a3ae9402964, type: 2}
+  itemDatos: {fileID: 11400000, guid: 0bad2adc48ae98144bc76a3ae9402964, type: 2}
   OnPickUp:
     m_PersistentCalls:
       m_Calls: []
-  particula: {fileID: 1626316942129023305}
   sonido: {fileID: 8300000, guid: a4a9327e98855524c846cc8e2f559e96, type: 3}
   volumen: 1
 --- !u!114 &2621081085616757626

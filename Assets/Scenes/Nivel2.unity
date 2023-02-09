@@ -2324,7 +2324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2160969912061319786, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2341,6 +2341,10 @@ PrefabInstance:
     - target: {fileID: 8576347513604416121, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: maxDist
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576347514231347628, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: mouseLook.MinimumX
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8576347514242576490, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4939,6 +4943,22 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 187361657}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: llaves
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0bad2adc48ae98144bc76a3ae9402964, type: 2}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 187361658}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 187361657}
     - target: {fileID: 5973548691368706131, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: m_Name
       value: Blockea Teletransporte Rojo
@@ -6673,6 +6693,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 187361657}
+    - target: {fileID: 7700287691781365394, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 187361658}
+    - target: {fileID: 7700287691781365394, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 187361657}
+    - target: {fileID: 7700287691781365394, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
+      propertyPath: llaves
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
 --- !u!4 &581403221 stripped
@@ -9131,6 +9163,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 187361657}
+    - target: {fileID: 43329815255259883, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
+      propertyPath: llaves
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 43329815255259883, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 187361658}
+    - target: {fileID: 43329815255259883, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 187361657}
     - target: {fileID: 3302237398683802441, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
       propertyPath: m_Name
       value: PuertaAzul
@@ -10827,6 +10871,22 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 187361657}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: llaves
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: b94d3d01e8e374747abec64a55f95024, type: 2}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 187361657}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 187361658}
     - target: {fileID: 5973548691368706131, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: m_Name
       value: Blockea Teletransporte Azul
@@ -16312,6 +16372,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7756543640715314600, guid: c635329c649eb45419bda5dab3ec8491, type: 3}
+      propertyPath: objetivo
+      value: 
+      objectReference: {fileID: 1384501624}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c635329c649eb45419bda5dab3ec8491, type: 3}
 --- !u!1001 &1592048754
@@ -18074,6 +18138,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7756543640715314600, guid: c635329c649eb45419bda5dab3ec8491, type: 3}
+      propertyPath: objetivo
+      value: 
+      objectReference: {fileID: 1384501624}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c635329c649eb45419bda5dab3ec8491, type: 3}
 --- !u!1001 &1743501751
@@ -20026,6 +20094,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 187361657}
+    - target: {fileID: 4630350422125697038, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
+      propertyPath: llaves
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630350422125697038, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 187361658}
+    - target: {fileID: 4630350422125697038, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 187361657}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
 --- !u!1001 &1959154729
@@ -21091,6 +21171,22 @@ PrefabInstance:
       objectReference: {fileID: 187361658}
     - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: text
+      value: 
+      objectReference: {fileID: 187361657}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: llaves
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bdbcd19112bdc547a403df3ffae8853, type: 2}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 187361658}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: texto
       value: 
       objectReference: {fileID: 187361657}
     - target: {fileID: 5973548691368706131, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}

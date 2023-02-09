@@ -7,28 +7,28 @@ using UnityEngine.UI;
 public class ItemSlot : MonoBehaviour
 {
 
-    public Image _itemIcon;
+    public Image icono;
 
-    public GameObject _stackObj;
+    public GameObject objeto;
 
-    public TextMeshProUGUI _stackNumber;
+    public TextMeshProUGUI numero;
 
-    public void Set(InventoryItem item)
+    public void Set(InventarioItems item)//Asigna los datos al slot.
     {
-        _itemIcon.sprite = item.data.itemIcon;
+        icono.sprite = item.dato.icono;
 
-        if (item.stackSize <= 1)
+        if (item.tamañoInv <= 1)
         {
-            _stackObj.SetActive(false);
+            objeto.SetActive(false);
             return;
         }
 
-        _stackNumber.text = item.stackSize.ToString();
+        numero.text = item.tamañoInv.ToString();
     }
-    public void Reset()
+    public void Reset()//Resetea los datos del slot.
     {
-        _itemIcon.sprite = null;
-        _stackObj.SetActive(false);
-        _stackNumber.text = "";
+        icono.sprite = null;
+        objeto.SetActive(false);
+        numero.text = "";
     }
 }

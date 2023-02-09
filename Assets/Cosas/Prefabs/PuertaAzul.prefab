@@ -108,8 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2360d54e4dc82e4387efb97c1600c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 3302237398683802441}
-  keyCounter: 0
-  requiredKeys: 1
+  puerta: {fileID: 3302237398683802441}
+  contadorLlaves: 0
+  llaves: 1
   player: {fileID: 0}
-  itemData: {fileID: 11400000, guid: b94d3d01e8e374747abec64a55f95024, type: 2}
+  item: {fileID: 11400000, guid: b94d3d01e8e374747abec64a55f95024, type: 2}
+  cajaTexto: {fileID: 0}
+  texto: {fileID: 0}

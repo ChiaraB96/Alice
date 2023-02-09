@@ -5,50 +5,50 @@ using UnityEngine.UI;
 
 public class Puertas : MonoBehaviour
 {
-    public GameObject door;
-    public int keyCounter = 0;
-    public int requiredKeys = 1;
+    public GameObject puerta;
+    public int contadorLlaves = 0;
+    public int llaves = 1;
     public GameObject player;
-    public InventoryItemData itemData;
-    public GameObject messageObject;
-    public Text text;
+    public InventarioItemDatos item;
+    public GameObject cajaTexto;
+    public Text texto;
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (keyCounter >= requiredKeys)
+            if (contadorLlaves >= llaves)
             {
-                OpenDoor();
+                abrirPuerta();
             }
             else
             {
-                ShowMessage();
+                mostrarMensaje();
             }
         }
     }
 
-    void OpenDoor()
+    void abrirPuerta()
     {
-        for (int i = 0; i < keyCounter; i++)
+        for (int i = 0; i < contadorLlaves; i++)
         {
-            InventorySystem.Instance.Remove(itemData, keyCounter);
+            SistemaInventario.Instancia.Remove(item, contadorLlaves);
         }
-        Destroy(door);
+        Destroy(puerta);
     }
 
-    void ShowMessage()
+    void mostrarMensaje()
     {
-        messageObject.SetActive(true);
-        text.gameObject.SetActive(true);
-        text.text = "No tienes la cantidad de particulas necesarias para abrir esta puerta.";
-        StartCoroutine(HideMessage());
+        cajaTexto.SetActive(true);
+        texto.gameObject.SetActive(true);
+        texto.text = "No tienes la cantidad de particulas necesarias para abrir esta puerta.";
+        StartCoroutine(esconderMensaje());
     }
 
-    IEnumerator HideMessage()
+    IEnumerator esconderMensaje()
     {
         yield return new WaitForSeconds(5);
-        messageObject.SetActive(false);
-        text.text = "";
+        cajaTexto.SetActive(false);
+        texto.text = "";
     }
 }

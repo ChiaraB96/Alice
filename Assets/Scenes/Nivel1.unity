@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d448dcc91ac32741b0e118b3769b92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
+  itemDatos: {fileID: 0}
   OnPickUp:
     m_PersistentCalls:
       m_Calls: []
@@ -1143,7 +1143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7430688827515710666, guid: c1563ce697364be458bee72ba7f850f9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7430688827515710666, guid: c1563ce697364be458bee72ba7f850f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4747,6 +4747,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2103260225}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 1878578803}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 2103260225}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: b94d3d01e8e374747abec64a55f95024, type: 2}
     - target: {fileID: 5973548691368706131, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: m_Name
       value: BlockeaTeletransporteAzul
@@ -22373,7 +22385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664762244853484191, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 664762244853484191, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22431,6 +22443,22 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2103260225}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 1878578803}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 2103260225}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: llaves
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0bad2adc48ae98144bc76a3ae9402964, type: 2}
     - target: {fileID: 5973548691368706131, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: m_Name
       value: BlockeaTeletransporteRojo
@@ -26813,7 +26841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4092965906717336443, guid: 8af563c2e08a89944af30bdce81fe5c0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4092965906717336443, guid: 8af563c2e08a89944af30bdce81fe5c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26912,6 +26940,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2103260225}
+    - target: {fileID: 4630350422125697038, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 1878578803}
+    - target: {fileID: 4630350422125697038, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 2103260225}
+    - target: {fileID: 4630350422125697038, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
+      propertyPath: llaves
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816f185d222b1c942bb838c4cdf8b69c, type: 3}
 --- !u!1001 &901198045153416248
@@ -27111,6 +27151,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2103260225}
+    - target: {fileID: 7700287691781365394, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
+      propertyPath: llaves
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700287691781365394, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 1878578803}
+    - target: {fileID: 7700287691781365394, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 2103260225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04fe0190c6dd2424ebdac7a9aaf83e68, type: 3}
 --- !u!1001 &3302237400013304451
@@ -27130,6 +27182,14 @@ PrefabInstance:
       objectReference: {fileID: 1878578803}
     - target: {fileID: 43329815255259883, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
       propertyPath: text
+      value: 
+      objectReference: {fileID: 2103260225}
+    - target: {fileID: 43329815255259883, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 1878578803}
+    - target: {fileID: 43329815255259883, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
+      propertyPath: texto
       value: 
       objectReference: {fileID: 2103260225}
     - target: {fileID: 3302237398683802441, guid: 9d0309d981ad02549bbb68d5f48b929f, type: 3}
@@ -27552,6 +27612,22 @@ PrefabInstance:
       objectReference: {fileID: 1878578803}
     - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
       propertyPath: text
+      value: 
+      objectReference: {fileID: 2103260225}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: llaves
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bdbcd19112bdc547a403df3ffae8853, type: 2}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: cajaTexto
+      value: 
+      objectReference: {fileID: 1878578803}
+    - target: {fileID: 4819629382236827401, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}
+      propertyPath: texto
       value: 
       objectReference: {fileID: 2103260225}
     - target: {fileID: 5973548691368706131, guid: 8d8fa598d4c5f214cadfa4623ae4b40c, type: 3}

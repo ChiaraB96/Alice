@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 
 public class ItemObject : MonoBehaviour
 {
-    public InventoryItemData itemData;
+    public InventarioItemDatos itemDatos;
     public UnityEvent OnPickUp; 
 
     public AudioClip sonido;
@@ -17,9 +17,9 @@ public class ItemObject : MonoBehaviour
         particula = Camera.main.GetComponent<AudioSource>();
     }
 
-    public void HandlePickUp()
+    public void Recoger() //Recoge los items, los agrega al inventario y elimina de la escena.
     {
-        InventorySystem.Instance.Add(itemData);
+        SistemaInventario.Instancia.Add(itemDatos);
         OnPickUp.Invoke();
         Destroy(gameObject);
     }
@@ -29,7 +29,7 @@ public class ItemObject : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             particula.PlayOneShot(sonido,volumen);
-            HandlePickUp();
+            Recoger();
         }
     }
 }

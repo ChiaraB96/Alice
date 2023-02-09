@@ -4906,11 +4906,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d448dcc91ac32741b0e118b3769b92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: b94d3d01e8e374747abec64a55f95024, type: 2}
+  itemDatos: {fileID: 11400000, guid: b94d3d01e8e374747abec64a55f95024, type: 2}
   OnPickUp:
     m_PersistentCalls:
       m_Calls: []
-  particula: {fileID: 7254040363266458388}
   sonido: {fileID: 8300000, guid: a4a9327e98855524c846cc8e2f559e96, type: 3}
   volumen: 1
 --- !u!114 &6480997308190093951
