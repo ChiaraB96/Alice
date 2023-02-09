@@ -17,7 +17,7 @@ public class Volumen : MonoBehaviour
     public void ModificarVolumen(float valor)
     {
         sliderValor = valor;
-        PlayerPrefs.SetFloat("volumennAudio", sliderValor);
+        PlayerPrefs.SetFloat("volumenAudio", sliderValor);
         AudioListener.volume = slider.value;
     }
 }
