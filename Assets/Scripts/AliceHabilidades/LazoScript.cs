@@ -17,9 +17,7 @@ public class LazoScript : MonoBehaviour
     public float maxDist = 20.0f;
     private float distActual;
 
-
-
-    // Update is called once per frame
+    
     void Update()
     {
         //disparar lazo

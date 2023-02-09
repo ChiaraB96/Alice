@@ -887,7 +887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7205284453013556458}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -55.5, y: -2, z: 80}
+  m_LocalPosition: {x: 25.9, y: 0, z: -42.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5101258771657762539}
@@ -1687,7 +1687,7 @@ MonoBehaviour:
     XSensitivity: 2
     YSensitivity: 2
     clampVerticalRotation: 1
-    MinimumX: -45
+    MinimumX: -50
     MaximumX: 90
     smooth: 1
     smoothTime: 18
@@ -2450,7 +2450,7 @@ PrefabInstance:
       objectReference: {fileID: 8257740433590919150}
     - target: {fileID: 5644809837426004876, guid: 135ad8a192152a1438ae24bbc07be52a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeSlider
+      value: ModificarVolumen
       objectReference: {fileID: 0}
     - target: {fileID: 5644809837426004876, guid: 135ad8a192152a1438ae24bbc07be52a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

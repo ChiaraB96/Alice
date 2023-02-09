@@ -2334,6 +2334,22 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4088826192237333839, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ModificarVolumen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031805743466786202, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031805743466786202, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031805743466786202, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -42.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7291825975471734362, guid: f7e23de40f218a841b9293153aca4ed3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -33.4

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Volumen : MonoBehaviour
 {
     public Slider slider;
-    private float sliderValue;
+    private float sliderValor;
 
     void Start()
     {
@@ -14,11 +14,10 @@ public class Volumen : MonoBehaviour
         AudioListener.volume = slider.value;
     }
 
-    public void ChangeSlider(float valor)
+    public void ModificarVolumen(float valor)
     {
-        sliderValue = valor;
-        PlayerPrefs.SetFloat("volumenAudio", sliderValue);
+        sliderValor = valor;
+        PlayerPrefs.SetFloat("volumennAudio", sliderValor);
         AudioListener.volume = slider.value;
     }
 }
-
