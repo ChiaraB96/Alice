@@ -2,13 +2,13 @@
 
 public class LlaveT : MonoBehaviour
 {
-    public BlockeaTeletransporte blockeateletransporteScript; // Asigna el script del bloque en el Inspector de Unity
+    public BlockeaTeletransporte blockeateletransporteScript; 
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Verifica si el objeto que colisiona es el jugador
+        if (other.CompareTag("Player"))
         {
-            blockeateletransporteScript.contadorLlaves++; // aumenta en 1 el contador de llaves
+            blockeateletransporteScript.contadorLlaves++; 
         }
     }
 }

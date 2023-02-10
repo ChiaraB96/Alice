@@ -21,22 +21,22 @@ public class LazoScript : MonoBehaviour
     void Update()
     {
         //disparar lazo
-        if(Input.GetMouseButtonDown(0) && disparado == false)
+        if(Input.GetMouseButtonDown(0) && disparado == false){
             disparado = true;
-
+        }
         if (disparado) {
             LineRenderer soga = lazo.GetComponent<LineRenderer>();
             soga.positionCount = 2;
             soga.SetPosition(0, holder.transform.position);
             soga.SetPosition(1, lazo.transform.position);
         }
-        if (disparado == true && enlazado == false)
-        {
+        if (disparado == true && enlazado == false){
             lazo.transform.Translate(Vector3.forward * Time.deltaTime * lazoTravelSpeed);
             distActual = Vector3.Distance(transform.position, lazo.transform.position);
 
-            if(distActual >= maxDist)
-            DevolverLazo();
+            if(distActual >= maxDist){
+                DevolverLazo();
+            }
         }
 
         if(enlazado == true && disparado == true){

@@ -2,13 +2,13 @@
 
 public class Llave : MonoBehaviour
 {
-    public Puertas puertasScript; // Asigna el script de la puerta en el Inspector de Unity
+    public Puertas puertasScript; 
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Verifica si el objeto que colisiona es el jugador
+        if (other.CompareTag("Player")) 
         {
-            puertasScript.contadorLlaves++; // aumenta en 1 el contador de llaves
+            puertasScript.contadorLlaves++;
 
         }
     }
