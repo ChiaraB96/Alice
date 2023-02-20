@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Paredes blancas transparentes.
+
+using UnityEngine;
 
 public class Muro : MonoBehaviour
 {

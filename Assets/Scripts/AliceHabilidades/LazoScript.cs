@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Prefab del personaje.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// EventSystemMenu dentro del personaje o GameManagerMenu en la escena "MenuPrincipal".
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

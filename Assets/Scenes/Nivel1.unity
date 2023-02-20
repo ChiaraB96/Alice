@@ -2281,6 +2281,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1435258004}
+    - target: {fileID: 2621081085616757626, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1385532946}
     - target: {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
       propertyPath: blockeateletransporteScript
       value: 
@@ -7657,7 +7661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527552892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.62, y: 3.2, z: -11.02}
+  m_LocalPosition: {x: -26.62, y: 3.2, z: -12.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1739260739}
@@ -7689,7 +7693,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15, y: 1, z: 30}
+  m_Size: {x: 15, y: 1, z: 25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &529954907
 PrefabInstance:
@@ -7812,6 +7816,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1435258004}
+    - target: {fileID: 2621081085616757626, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1385532946}
     - target: {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
       propertyPath: blockeateletransporteScript
       value: 
@@ -10027,6 +10035,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1435258004}
+    - target: {fileID: 2621081085616757626, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1385532946}
     - target: {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
       propertyPath: blockeateletransporteScript
       value: 
@@ -12430,6 +12442,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 900277142}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 262056430}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!4 &892918891 stripped
@@ -18648,6 +18664,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1331212618}
+    - target: {fileID: 5380410987260091560, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 111209717}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!4 &1427678574 stripped
@@ -21426,6 +21446,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1331212618}
+    - target: {fileID: 5380410987260091560, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 111209717}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!1 &1690101237
@@ -25860,6 +25884,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1331212618}
+    - target: {fileID: 5380410987260091560, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 111209717}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!4 &2062265687 stripped
@@ -26888,6 +26916,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1435258004}
+    - target: {fileID: 2621081085616757626, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1385532946}
     - target: {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
       propertyPath: blockeateletransporteScript
       value: 

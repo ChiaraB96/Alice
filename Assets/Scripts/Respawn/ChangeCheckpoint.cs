@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// En algunas plataformas de color amarillo.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

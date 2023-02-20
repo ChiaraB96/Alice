@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Sobre el nivel del suelo en plataformas con nombre "respawn" o similar.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

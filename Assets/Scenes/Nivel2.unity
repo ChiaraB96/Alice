@@ -1178,6 +1178,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 804916919}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 81886156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!4 &93552393 stripped
@@ -4203,6 +4207,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 2003150492}
+    - target: {fileID: 5380410987260091560, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1058486759}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!4 &372473114 stripped
@@ -4632,6 +4640,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 804916919}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 81886156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!1001 &400486762
@@ -7145,6 +7157,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 804916919}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 81886156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!1001 &659534535
@@ -8696,6 +8712,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 2003150492}
+    - target: {fileID: 5380410987260091560, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1058486759}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!114 &804916919 stripped
@@ -9529,6 +9549,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 804916919}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 81886156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!1001 &876240356
@@ -9842,6 +9866,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1425827250}
+    - target: {fileID: 2621081085616757626, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1729355810}
     - target: {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
       propertyPath: blockeateletransporteScript
       value: 
@@ -10760,6 +10788,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 804916919}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 81886156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!1001 &994640089
@@ -12132,6 +12164,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 1425827250}
+    - target: {fileID: 2621081085616757626, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1729355810}
     - target: {fileID: 4322463083809136594, guid: 9a8ab42d6f1b3a94e92fe881e0e867c6, type: 3}
       propertyPath: blockeateletransporteScript
       value: 
@@ -15140,6 +15176,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 2003150492}
+    - target: {fileID: 5380410987260091560, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 1058486759}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3af0756bb3654690122060f9cef08, type: 3}
 --- !u!4 &1409838219 stripped
@@ -15941,7 +15981,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519784114}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19005,6 +19045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertasScript: {fileID: 1425827250}
+  blockeateletransporteScript: {fileID: 0}
 --- !u!1001 &1801982447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20313,6 +20354,10 @@ PrefabInstance:
       propertyPath: puertasScript
       value: 
       objectReference: {fileID: 804916919}
+    - target: {fileID: 6480997308190093951, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
+      propertyPath: blockeateletransporteScript
+      value: 
+      objectReference: {fileID: 81886156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10a79f37ff522b4280e2844332bef77, type: 3}
 --- !u!1 &1960868668

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Dentro del primer Cube de la torreta.
+
+using UnityEngine;
 
 public class MovimientoTorreta : MonoBehaviour
 {

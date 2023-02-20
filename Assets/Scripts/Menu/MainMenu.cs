@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// GameManagerMenu en la escena "Menu".
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

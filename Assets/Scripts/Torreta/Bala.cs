@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Prefab de la bala.
+
+using UnityEngine;
 
 public class Bala : MonoBehaviour
 {

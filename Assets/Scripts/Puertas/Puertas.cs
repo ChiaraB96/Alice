@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Puertas de colores.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

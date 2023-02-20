@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Box semi-transparente que envuelve la particula del teletransporte.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

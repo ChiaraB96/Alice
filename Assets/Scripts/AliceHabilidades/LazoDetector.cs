@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// Personaje -> MainCamera -> Holder -> Lazo 
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

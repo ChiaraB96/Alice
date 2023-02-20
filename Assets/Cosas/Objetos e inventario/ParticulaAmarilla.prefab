@@ -4809,7 +4809,6 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 3668373518525006786}
   - component: {fileID: 5380410987260091560}
-  - component: {fileID: 1936526390909848983}
   - component: {fileID: 8236398759212626339}
   m_Layer: 0
   m_Name: PowerUp
@@ -4940,18 +4939,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertasScript: {fileID: 0}
---- !u!114 &1936526390909848983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5a1d2b18f3595d45b988c6b56d5c908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   blockeateletransporteScript: {fileID: 0}
 --- !u!82 &8236398759212626339
 AudioSource:
