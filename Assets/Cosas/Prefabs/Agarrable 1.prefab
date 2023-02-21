@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1250600813832890544}
   - component: {fileID: 1250600813832890547}
   - component: {fileID: 1250600813832890546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Agarrable 1
   m_TagString: Enlazable
   m_Icon: {fileID: 0}

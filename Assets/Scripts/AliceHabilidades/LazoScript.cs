@@ -19,12 +19,21 @@ public class LazoScript : MonoBehaviour
     public float maxDist = 20.0f;
     private float distActual;
 
-    
+    public LayerMask objEnlazable;
+    bool rycast;
+    public Transform direccion;
+    public GameObject miraActiva;
+
     void Update()
     {
+        miraActiva.SetActive(false);
+        rycast= Physics.Raycast(direccion.position, direccion.forward, maxDist, objEnlazable);
+        if(rycast){
+            miraActiva.SetActive(true);
         //disparar lazo
         if(Input.GetMouseButtonDown(0) && disparado == false){
             disparado = true;
+        }
         }
         if (disparado) {
             LineRenderer soga = lazo.GetComponent<LineRenderer>();
