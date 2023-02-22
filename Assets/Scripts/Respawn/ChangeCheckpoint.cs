@@ -1,4 +1,4 @@
-﻿// En algunas plataformas de color amarillo.
+﻿// CheckPoint dentro de algunas plataformas de color amarillo.
 
 using System.Collections;
 using System.Collections.Generic;

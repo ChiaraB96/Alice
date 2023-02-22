@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// En algunas plataformas de las zonas rojas.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

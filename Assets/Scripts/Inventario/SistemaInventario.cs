@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Personaje -> Inventario.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

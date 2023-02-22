@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Particula -> PowerUp.
+
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Audio;
 

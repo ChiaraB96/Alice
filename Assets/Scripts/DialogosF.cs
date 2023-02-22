@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Empty Object "Dialogos".
+
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
