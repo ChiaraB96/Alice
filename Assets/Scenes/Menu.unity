@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 266397976}
     - target: {fileID: 4117172147656079373, guid: 04938c026e8cf9f4baa6de9cb4da3107, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EscenaJuego
+      value: CambiaEscena
       objectReference: {fileID: 0}
     - target: {fileID: 4117172147656079373, guid: 04938c026e8cf9f4baa6de9cb4da3107, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -228,7 +228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4117172147656079373, guid: 04938c026e8cf9f4baa6de9cb4da3107, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117172147656079373, guid: 04938c026e8cf9f4baa6de9cb4da3107, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 4117172147656079375, guid: 04938c026e8cf9f4baa6de9cb4da3107, type: 3}
       propertyPath: m_Name

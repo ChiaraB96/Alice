@@ -30,10 +30,11 @@ public class LazoScript : MonoBehaviour
         rycast= Physics.Raycast(direccion.position, direccion.forward, maxDist, objEnlazable);
         if(rycast){
             miraActiva.SetActive(true);
-        //disparar lazo
-        if(Input.GetMouseButtonDown(0) && disparado == false){
+        
+            //disparar lazo
+            if(Input.GetMouseButtonDown(0) && disparado == false){
             disparado = true;
-        }
+            }
         }
         if (disparado) {
             LineRenderer soga = lazo.GetComponent<LineRenderer>();

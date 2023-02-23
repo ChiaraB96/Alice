@@ -18,6 +18,7 @@ public class Checkpoint : MonoBehaviour {
         {
             player.transform.position = checkpoint.position;
             player.transform.rotation = checkpoint.rotation;
+
         }
 	}
 }
