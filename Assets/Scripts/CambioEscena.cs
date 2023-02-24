@@ -1,5 +1,8 @@
-﻿// Objeto "Nivel" dentro de cada escena.
+﻿/*Objeto "Nivel" dentro de cada escena.
 
+Cuando un gameObject con el tag player entra en el trigger del gameObject que tiene este script
+se genera el cambio de escena a la escena con el nombre asignado en el public string
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +10,8 @@ using UnityEngine.SceneManagement;
 
 public class CambioEscena : MonoBehaviour
 {
-    public string escena;
+    public string escena; //escena que se va a cargar
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
@@ -26,8 +30,8 @@ using UnityEngine.SceneManagement;
 
 public class CambioEscena : MonoBehaviour
 {
-    public string escena;
-    private GameObject inventario;
+    public string escena; //escena que se va a cargar
+    private GameObject inventario; // gameObject que contiene el inventario
 
     void Start()
     {

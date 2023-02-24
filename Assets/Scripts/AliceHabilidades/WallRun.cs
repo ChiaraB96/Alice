@@ -1,4 +1,8 @@
-﻿// Prefab del personaje.
+﻿/* Prefab del personaje. 
+
+    Permite al personaje desplazarce por las paredes 
+    aplicando una fuerza en dirección al muro que detecte el Raycast
+*/
 
 using System;
 using System.Collections;
@@ -7,35 +11,38 @@ using UnityEngine;
 
 public class WallRun : MonoBehaviour
 {
-    bool estaWR;
+    bool estaWR; 
     bool muroIzquierda;
     bool muroDerecha;
 
-    public Rigidbody rb;
+    public Rigidbody rb;//rigidbody del personaje
 
-    public Transform orientacion;
-    public LayerMask WallRunLayer;
+    //public Transform orientacion; // trasnform dentro del personaje
+    public LayerMask WallRunLayer; //capa de wallRunning
 
-    public float wallRunVelocidad = 1250f;
-    public float fuerzaAgarre = 500f;
-    public float alcance = 2f;
-    public float fuerzaCambiarMuro = 2500f;
-    public float fuerzaSaltoMuro = 100f;
+    public float wallRunVelocidad = 1250f; //velocidad de WR
+    public float fuerzaAgarre = 500f; // fuerza de agarre contra el muro
+    public float alcance = 2f; // largo del raycast
+    public float fuerzaCambiarMuro = 2500f; // fuerza de cambio de muro
+    public float fuerzaSaltoMuro = 100f; // fuerza de salto entre muros
 
     void Update()
     {
         CheckearSiWR();
-        muroDerecha = Physics.Raycast(transform.position, orientacion.right, alcance, WallRunLayer);
-        muroIzquierda = Physics.Raycast(transform.position, -orientacion.right, alcance, WallRunLayer);
+        muroDerecha = Physics.Raycast(transform.position, transform.right, alcance, WallRunLayer);
+        Debug.DrawRay (transform.position, transform.right * alcance, Color.green );
+        muroIzquierda = Physics.Raycast(transform.position, -transform.right, alcance, WallRunLayer);
+        Debug.DrawRay (transform.position, -transform.right * alcance, Color.green );
 
-        if (!Input.GetKey("a") && !Input.GetKey("d"))
-        {
-        PararWR();
-        }
     }
 
     private void CheckearSiWR()
     {
+        if (!Input.GetKey("a") && !Input.GetKey("d"))
+        {
+        PararWR();
+        }
+
         if(Input.GetKey("a") && muroIzquierda)
         {
 
@@ -48,20 +55,20 @@ public class WallRun : MonoBehaviour
             EmpezarWR(); 
         }
 
-        if (Input.GetKey("d") && muroIzquierda && estaWR)
+        if (Input.GetKey("d") && muroIzquierda && estaWR)//cambio de muro
         {
 
             EmpezarWR();
-            rb.AddForce(orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
-            rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
+            rb.AddForce(transform.right * fuerzaCambiarMuro * Time.deltaTime);
+            rb.AddForce(transform.up * fuerzaSaltoMuro * Time.deltaTime);
         }
 
-        if (Input.GetKey("a") && muroDerecha && estaWR)
+        if (Input.GetKey("a") && muroDerecha && estaWR)//cambio de muro
         {
 
             EmpezarWR();
-            rb.AddForce(-orientacion.right * fuerzaCambiarMuro * Time.deltaTime);
-            rb.AddForce(orientacion.up * fuerzaSaltoMuro * Time.deltaTime);
+            rb.AddForce(-transform.right * fuerzaCambiarMuro * Time.deltaTime);
+            rb.AddForce(transform.up * fuerzaSaltoMuro * Time.deltaTime);
             
         }
 
@@ -75,14 +82,14 @@ public class WallRun : MonoBehaviour
     {
        rb.useGravity = false;
        estaWR = true;
-       rb.AddForce(orientacion.forward * wallRunVelocidad * Time.deltaTime);
+       rb.AddForce(transform.forward * wallRunVelocidad * Time.deltaTime);
        
        if (muroDerecha){
-            rb.AddForce(orientacion.right * fuerzaAgarre * Time.deltaTime);
+            rb.AddForce(transform.right * fuerzaAgarre * Time.deltaTime);
         }
 
         if (muroIzquierda){
-            rb.AddForce(-orientacion.right * fuerzaAgarre * Time.deltaTime);
+            rb.AddForce(-transform.right * fuerzaAgarre * Time.deltaTime);
         }
              
     }

@@ -1,9 +1,17 @@
-﻿using System.Collections;
+﻿/* Personaje
+
+    cuando el jugador entra en un trigger con el tag respawn se modifica su posicion
+    al punto de respawn correspondiente a la ultima plataforma que tocó
+ */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Respawn : MonoBehaviour {
    
+    //punto de respawn
     public Transform inicial; 
     public Transform punto1;
     public Transform punto2;
@@ -13,12 +21,9 @@ public class Respawn : MonoBehaviour {
     public Transform punto6;
     public Transform final;
 
+    private UltimaPlataforma ultimaPlataforma; //ultima plataforma que tocó el jugador
 
 
-    private UltimaPlataforma ultimaPlataforma;
-
-
-    // Mueve el objeto en el que está inserto este script a una nueva ubicación, indicada por el argumento nuevaPosicion.
     public void Reposicionar (string nuevaPosicion) {
         switch (nuevaPosicion) {
             case "RInicial":

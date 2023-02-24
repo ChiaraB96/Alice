@@ -1,12 +1,14 @@
-﻿// Personaje -> HudBar -> Imagen.
+﻿/* Personaje -> HudBar -> Imagen.
 
+    Actualiza la interfaz del inventario cada vez que el mismo se modifique
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class InterfazInventario : MonoBehaviour
 {
-    public GameObject prefabSlot;
+    public GameObject prefabSlot; // prefab del slot
 
     private void Start()
     {
@@ -15,9 +17,9 @@ public class InterfazInventario : MonoBehaviour
 
     public void actualizarInventario()
     {
-        foreach (Transform t in transform)
+        foreach (Transform objeto in transform)
         {
-            Destroy(t.transform.gameObject);            
+            Destroy(objeto.transform.gameObject);            
         }
 
         crearInventario();
@@ -35,7 +37,6 @@ public class InterfazInventario : MonoBehaviour
    {
     GameObject obj = Instantiate(prefabSlot);
     obj.transform.SetParent(transform, false);
-
     ItemSlot slot = obj.GetComponent<ItemSlot>();
     slot.Set(item);
    }

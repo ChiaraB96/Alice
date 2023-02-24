@@ -1,4 +1,7 @@
-﻿// Empty Object "Dialogos".
+﻿ /* Empty Object "Dialogos". 
+ 
+    la primera vez que el player entra al trigger se muestra el dialogo 
+ */
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,13 +10,13 @@ using System.Collections;
 
 public class Dialogos1Vez : MonoBehaviour
 {
-    public GameObject cajaTexto;
-    public Text texto; 
-    public float duracion = 5f;
-    private Dictionary<string, string> dialogos;
-    private Dictionary<string, bool> dialogosMostrados; 
-    private bool mostrando;
-    private Coroutine mostrarTextoCorrutina; 
+    public GameObject cajaTexto; // imagen que hace de contenedor del texto
+    public Text texto; //bloque de texto
+    public float duracion = 5f; //cantidad de tiempo que se va a mostrar el texto
+    private Dictionary<string, string> dialogos; // diccionario de dialogos
+    private Dictionary<string, bool> dialogosMostrados;  // diccionario de dialogos mostrados
+    private bool mostrando; //verifica que el dialogo se esta mostrando
+    private Coroutine mostrarTextoCorrutina;// asigna paramateros a la corrutina MostrarTexto
     
     private void Start()
     {

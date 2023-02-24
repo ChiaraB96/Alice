@@ -1,5 +1,7 @@
-﻿// EventSystemMenu dentro del personaje o GameManagerMenu en la escena "MenuPrincipal".
+﻿/* EventSystemMenu dentro del personaje o GameManagerMenu en la escena "MenuPrincipal".
 
+    sube y baja el volumen del juego
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +9,8 @@ using UnityEngine.UI;
 
 public class Volumen : MonoBehaviour
 {
-    public Slider slider;
-    private float sliderValor;
+    public Slider slider; // barra de volumen
+    private float sliderValor;//valor del volumen
 
     void Start()
     {

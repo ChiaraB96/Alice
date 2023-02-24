@@ -1,5 +1,8 @@
-﻿// Box semi-transparente que envuelve la particula del teletransporte.
+﻿/* Bloque semi-transparente que envuelve la particula del teletransporte.
 
+    el bloque se destruye si el presonaje tiene la cantidad de particulas necesararias,
+    en caso contrario muestra un cartel
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,13 +10,13 @@ using UnityEngine.UI;
 
 public class BlockeaTeletransporte : MonoBehaviour
 {
-    public GameObject bloque ; 
-    public int contadorLlaves = 0; 
-    public int llaves = 1; 
-    public GameObject player; 
-    public InventarioItemDatos item; 
-    public GameObject cajaTexto;
-    public Text texto;
+    public GameObject bloque ; // Bloqueateletrasporte
+    public int contadorLlaves = 0; //contador de llaves
+    public int llaves = 1; // cantidad de llaves necesarias para abrir la puerta
+    public GameObject player;  // jugador
+    public InventarioItemDatos item; // item que funciona como llave de la partícula
+    public GameObject cajaTexto; // imagen de fondo del bloque de texto
+    public Text texto; // bloque de texto
 
     void OnCollisionEnter(Collision collision)
     {

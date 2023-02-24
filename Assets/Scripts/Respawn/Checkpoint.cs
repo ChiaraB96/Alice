@@ -1,12 +1,16 @@
-﻿// Sobre el nivel del suelo en plataformas con nombre "respawn" o similar.
+﻿/* Sobre el nivel del suelo en plataformas con nombre "respawn" o similar.
 
+    al colisionar contra la plataforma que tiene el script
+    la posicion del jugador se modifica a la posicion del checkpoint asignado
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour {
-    public Transform checkpoint;
-    GameObject player;
+
+    public Transform checkpoint; // lugar de respown
+    GameObject player; //jugador
 
 	void Start ()
     {

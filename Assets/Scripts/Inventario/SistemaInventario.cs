@@ -1,18 +1,20 @@
-﻿// Personaje -> Inventario.
+﻿/* Personaje -> Inventario.
 
+    genera eventos que agregan, quitan o modifican la cantidad de items del inventario
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SistemaInventario : MonoBehaviour
 {
-    public static SistemaInventario Instancia;
+    public static SistemaInventario Instancia;//permite generar eventos
 
-    public delegate void cambioInventarioEvento();
-    public event cambioInventarioEvento cambioInventarioLlamada;
+    public delegate void cambioInventarioEvento();//delegado del evento
+    public event cambioInventarioEvento cambioInventarioLlamada;//se llama al modificar el inventario
 
-    private Dictionary<InventarioItemDatos, InventarioItems> diccionarioItems;
-    public List<InventarioItems> inventario;
+    private Dictionary<InventarioItemDatos, InventarioItems> diccionarioItems;//diccionario de items que pueden ir en el inventario
+    public List<InventarioItems> inventario;// lista de items que se encuentran en el inventario
 
     private void Awake()
     {

@@ -1,5 +1,8 @@
-﻿// EventSystemMenu dentro del personaje.
+﻿/* EventSystemMenu dentro del personaje.
 
+    abre el menú al presionar escape o la tecla p 
+    abre el menú de confirmación
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +10,9 @@ using UnityEngine;
 
 public class abreMenuPausa : MonoBehaviour
 {
-    public GameObject menuDePausa;
+    public GameObject menuDePausa; // menú de pausa
     private bool menuOn = false;
-    public GameObject confirmar;
+    public GameObject confirmar; // menú de confirmación
 
     // Update is called once per frame
     void Update()

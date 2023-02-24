@@ -1,10 +1,13 @@
-﻿// Paredes blancas transparentes.
+﻿/* Paredes blancas transparentes. 
+
+    cuando el jugador sale del trigger el mismo de desactiva
+*/
 
 using UnityEngine;
 
 public class Muro : MonoBehaviour
 {
-    private BoxCollider muroCollider;
+    private BoxCollider muroCollider;//collider del gameObject que tiene el script
 
     private void Start()
     {

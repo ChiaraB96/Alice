@@ -1,4 +1,6 @@
-﻿[System.Serializable]
+﻿// clase con funciones que permiten modoficar la cantidad de un mismo item dentro del inventario
+
+[System.Serializable]
 public class InventarioItems
 
 {

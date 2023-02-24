@@ -1,4 +1,7 @@
-﻿// Prefab Slot.
+﻿/* Prefab Slot.
+
+    asigna parametros al slot y muestra u oculta el numero que marca la cantidad de datos del inventario
+ */
 
 using System.Collections;
 using System.Collections.Generic;
@@ -10,9 +13,7 @@ public class ItemSlot : MonoBehaviour
 {
 
     public Image icono;
-
-    public GameObject objeto;
-
+    public GameObject objeto;//fondo numero slot
     public TextMeshProUGUI numero;
 
     public void Set(InventarioItems item)//Asigna los datos al slot.
@@ -22,15 +23,13 @@ public class ItemSlot : MonoBehaviour
         if (item.tamañoInv <= 1)
         {
             objeto.SetActive(false);
-            return;
+
+        }
+        else {
+            objeto.SetActive(true);
+
         }
 
         numero.text = item.tamañoInv.ToString();
-    }
-    public void Reset()//Resetea los datos del slot.
-    {
-        icono.sprite = null;
-        objeto.SetActive(false);
-        numero.text = "";
     }
 }

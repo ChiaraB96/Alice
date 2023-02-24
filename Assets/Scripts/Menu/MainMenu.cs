@@ -1,5 +1,5 @@
-﻿// GameManagerMenu en la escena "Menu". y EscenaFinal
-
+﻿/* GameManagerMenu en la escena "Menu". y EscenaFinal
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

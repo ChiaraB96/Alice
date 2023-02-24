@@ -1,5 +1,8 @@
-﻿// Prefab del personaje.
+﻿/*  Prefab del personaje.
 
+    Lanza el lazo y si este colisiona contra un objeto con el tag "Enlazable" mueve
+    la posicion del personaje en dirección a dicho objeto 
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,25 +12,28 @@ public class LazoScript : MonoBehaviour
     public GameObject lazo;
     public GameObject holder;
     
-    public float lazoTravelSpeed = 15.0f;
-    public float jugadorTravelSpeed = 10.0f;
+    public float lazoTravelSpeed = 15.0f;// velocidad de movimiento del lazo
+    public float jugadorTravelSpeed = 10.0f;//velocidad de movimiento del personaje
     
     public static bool disparado;
     public bool enlazado;
-    public GameObject objetoEnlazable;
+    public GameObject objetoEnlazable; //objeto con el tag Enlazable al cual el lazo colisionó
     
-    public float maxDist = 20.0f;
-    private float distActual;
+    public float maxDist = 20.0f;// distancia máxima que alcanza el lazo
+    private float distActual; //distancia entre el jugador y el lazo
 
-    public LayerMask objEnlazable;
+    public LayerMask objEnlazable; // capa que detecta el raycast
     bool rycast;
-    public Transform direccion;
-    public GameObject miraActiva;
+    public Transform direccion; //trasform del holder
+    public GameObject miraActiva; //mira cuando el lazo puede ser lanzado
 
     void Update()
     {
         miraActiva.SetActive(false);
-        rycast= Physics.Raycast(direccion.position, direccion.forward, maxDist, objEnlazable);
+        rycast= Physics.Raycast(direccion.position, direccion.forward, (maxDist-1.7f), objEnlazable);
+        Debug.DrawRay (direccion.position, direccion.forward* (maxDist-1.7f), Color.magenta );
+
+
         if(rycast){
             miraActiva.SetActive(true);
         
@@ -36,7 +42,7 @@ public class LazoScript : MonoBehaviour
             disparado = true;
             }
         }
-        if (disparado) {
+        if (disparado) { //si el lazo es disparado se genera un line render con inicio en el holder y fin en el lazo
             LineRenderer soga = lazo.GetComponent<LineRenderer>();
             soga.positionCount = 2;
             soga.SetPosition(0, holder.transform.position);
@@ -55,7 +61,6 @@ public class LazoScript : MonoBehaviour
             lazo.transform.parent = objetoEnlazable.transform;
             transform.position = Vector3.MoveTowards(transform.position, lazo.transform.position, jugadorTravelSpeed*Time.deltaTime);
             float distanceToLazo = Vector3.Distance(transform.position, lazo.transform.position);
-
             this.GetComponent<Rigidbody>().useGravity = false;
 
             if(distanceToLazo < 3){

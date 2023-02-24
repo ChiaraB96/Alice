@@ -1,4 +1,9 @@
-﻿// Personaje -> MainCamera -> Holder -> Lazo 
+﻿/* Personaje -> MainCamera -> Holder -> Lazo  
+
+    si el lazo entra en el trigger de un objeto con el tag "Enlazable" 
+    accede al script del lazo y modifica los parametros enlazado a true 
+    y asigna dicho objeto como el objetoEnlazable
+*/
 
 
 using System.Collections;
@@ -7,7 +12,7 @@ using UnityEngine;
 
 public class LazoDetector : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject player;// jugador
 
 
     void OnTriggerEnter(Collider other) {

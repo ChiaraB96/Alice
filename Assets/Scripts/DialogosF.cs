@@ -1,4 +1,11 @@
-﻿// Empty Object "Dialogos".
+﻿/*Empty Object "Dialogos".
+
+cada vez que el jugador entra en el trigger de una plataforma con el script 
+se muestra en pantalla el string que tenga como nombre el nombre de la plataforma 
+en gameObject y text asignado
+*/
+
+
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,12 +15,11 @@ using System.Collections;
 
 public class DialogosF : MonoBehaviour
 {
-    public GameObject cajaTexto;
-    public Text texto;
-    public float duracion = 5f;
-    private Dictionary<string, string> DialogosFijos;
-    private bool mostrando;
-    private Coroutine mostrarTextoCorrutina;
+    public GameObject cajaTexto; // imagen que hace de contenedor del texto
+    public Text texto; //bloque de texto
+    public float duracion = 5f; //cantidad de tiempo que se va a mostrar el texto
+    private Dictionary<string, string> DialogosFijos; // diccionario de dialogos
+    private bool mostrando; //verifica que el dialogo se esta mostrando
  
     private void Start()
     {
