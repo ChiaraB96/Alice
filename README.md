@@ -18,3 +18,4 @@ Cómo ejecutar el proyecto:
  - Seleccionar Open Project y elegir la carpeta del proyecto.
  - Abrir la escena principal y ejecutar el juego desde el editor.
  
+Donde encontrar el Juego: https://nehuen-pey.itch.io/proyecto-alice
